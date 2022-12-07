@@ -10,7 +10,7 @@ export default function Nav(): JSX.Element {
                     <Link href={'/'}>Inicio</Link>
                 </li>
                 <li>
-                    <Link href={'/'}>Sobre Mi</Link>
+                    <Link href={'/about'}>Sobre Mi</Link>
                 </li>
                 <li>
                     <Link href={'/'}>Habilidades</Link>
@@ -20,6 +20,9 @@ export default function Nav(): JSX.Element {
                 </li>
                 <li>
                     <Link href={'/'}>Estudios</Link>
+                </li>
+                <li>
+                    <Link href={'/'}>Contacto</Link>
                 </li>
             </ul>
         </nav>

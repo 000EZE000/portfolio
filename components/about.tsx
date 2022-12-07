@@ -1,7 +1,7 @@
 
 import Image from "next/image"
 
-export default function About(): JSX.Element {
+export default function AboutComponents(): JSX.Element {
 
     const dateNow = new Date().toJSON().split('-')[0]
     const myAge = Number(dateNow) - 1997
@@ -11,8 +11,10 @@ export default function About(): JSX.Element {
             <title>Mi camino a Desarrollador Web</title>
             <article>
                 <Image
-                    src='../public/photo/me'
+                    src='/../public/photo/me.png'
                     alt="Ezequiel Sosa"
+                    width='100'
+                    height='100'
                 />
                 <p>
                     Hola me llamo Ezequiel Sosa  y tengo {myAge} años,
@@ -25,8 +27,7 @@ export default function About(): JSX.Element {
                     de que el trabajo que me especialize y Yo no eramos complatibles.
                 </p>
                 <p>
-                    El mundo del tecnologico simpre me intereso,Era mi oportunidad para
-                    ver lo que me gustaba y aunque el area de tecnologia ofrece muchas
+                    Era mi oportunidad para ver lo que me gustaba y aunque el area de tecnologia ofrece muchas
                     opciones, El desarrolo Web era lo mio.
                 </p>
                 <p>
