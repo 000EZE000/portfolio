@@ -1,6 +1,6 @@
 
 
-## Hola, Me encuentro haciendo el Porfolio!! 
+## Hola, Me encuentro haciendo el Portfolio!! 
 
 En cualquier momento podre mostrar resultados !!
 
