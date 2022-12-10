@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: [
       'media.tenor.com',
+      'res.cloudinary.com',
     ]
   }
 }

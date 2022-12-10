@@ -12,40 +12,43 @@ export default function SkillsComp(): JSX.Element {
     const pack: pack[] = [
         {
             title: 'Javascript',
-            image: `javascript.png`
+            image: `https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/image-skills/hard/kym4ktp2bt5qyoxxyvwa.png`
         }, {
             title: 'CSS',
-            image: 'css.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/onnt6gfqvgzt2hdgsxro.png'
         }, {
             title: 'HTML',
-            image: 'html5.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/image-skills/hard/vtey4tvdv0jq2cklcz0z.png'
         }, {
             title: 'React',
-            image: 'react.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/s6oyei445tr4en1rmki2.png'
         }, {
             title: 'Redux',
-            image: 'redux.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/iukdjdzwwjnz44ql0hjq.png'
         }, {
             title: 'Sequelize',
-            image: 'sequelize.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707785/image-skills/hard/xbstidxcgclacnesgdts.png'
         }, {
             title: 'Postgres',
-            image: 'postgres.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/jwudkux9ptn7gszy98ea.png'
         }, {
             title: 'Nextjs',
-            image: 'nextjs.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707785/image-skills/hard/delriaafdtiu2zsppnug.png'
         }, {
             title: 'Prisma',
-            image: 'prisma.webp'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/image-skills/hard/ibkjgxrwny6vpi54vneg.webp'
         }, {
             title: 'Typescript',
-            image: 'typescript.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/vnyv1od3zhmef4gwyoog.png'
         }, {
             title: 'Vercel',
-            image: 'vercel.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/qur929chfpvyiapdu83z.png'
         }, {
             title: 'AWS Amazon',
-            image: 'aws.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/llxjhr1lpo0hiqeb4hhe.png'
+        }, {
+            title: 'Express',
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/ra0s8osdddgfktnymhze.png'
         },
     ]
 

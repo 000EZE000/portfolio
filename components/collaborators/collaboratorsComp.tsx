@@ -6,7 +6,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Zarina Alexía Milanesio</h4></header>
             <article>
                 <Image
-                    src="/../public/static/photo/collaborators/Ale.png"
+                    src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/collaborators/kqtnp4mtvzefjgrgwdni.png"
                     width='100'
                     height='100'
                     alt='Ale'
@@ -27,7 +27,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Francisco Sponton</h4></header>
             <article>
                 <Image
-                    src="/../public/static/photo/collaborators/Fran.png"
+                    src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/collaborators/iaa5e1jelctrj3cx4xbh.png"
                     width='100'
                     height='100'
                     alt='fran'
@@ -48,7 +48,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Mailin Adaro</h4></header>
             <article>
                 <Image
-                    src="/../public/static/photo/collaborators/Mailin.png"
+                    src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/photo/collaborators/f1a67rbuqizziphxdvqv.png"
                     width='100'
                     height='100'
                     alt='Mailin'
@@ -69,7 +69,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Juan Lopez</h4></header>
             <article>
                 <Image
-                    src="/../public/static/photo/collaborators/Juan.png"
+                    src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/collaborators/fmzru6spnhogwtidg6ih.png"
                     width='100'
                     height='100'
                     alt='Juan'

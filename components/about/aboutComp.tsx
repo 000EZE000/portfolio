@@ -19,7 +19,7 @@ export default function AboutComponents(): JSX.Element {
                 <title>Mi camino a Desarrollador Web</title>
                 <article>
                     <Image
-                        src='/../public/static/photo/me.png'
+                        src='/https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/o3oudtp3tzzmdnoa2ega.png'
                         alt="Ezequiel Sosa"
                         width='100'
                         height='100'
