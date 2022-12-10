@@ -13,12 +13,12 @@ export default function CollaboratorsComp(): JSX.Element {
                 />
                 <ButtonLinkImage
                     url='https://github.com/AlexiaMilanesio'
-                    image='gitHub.webp'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/gcjvuqlzfwhdss0jlrtp.webp'
                     alt='githubAle'
                 />
                 <ButtonLinkImage
                     url='https://www.linkedin.com/in/zarina-alexia-milanesio'
-                    image='linkedin.png'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/fhtzoz4b5aqgm7km8dml.png'
                     alt='linkedinAle'
                 />
             </article>
@@ -34,12 +34,12 @@ export default function CollaboratorsComp(): JSX.Element {
                 />
                 <ButtonLinkImage
                     url='https://github.com/fsponton'
-                    image='gitHub.webp'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/gcjvuqlzfwhdss0jlrtp.webp'
                     alt='githubFran'
                 />
                 <ButtonLinkImage
                     url='https://www.linkedin.com/in/juan-francisco-sponton-moretti/'
-                    image='linkedin.png'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/fhtzoz4b5aqgm7km8dml.png'
                     alt='LinkedinFran'
                 />
             </article>
@@ -55,12 +55,12 @@ export default function CollaboratorsComp(): JSX.Element {
                 />
                 <ButtonLinkImage
                     url='https://github.com/mailinadaro'
-                    image='gitHub.webp'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/gcjvuqlzfwhdss0jlrtp.webp'
                     alt='githubMail'
                 />
                 <ButtonLinkImage
                     url='https://www.linkedin.com/in/mailinadarofullstackdeveloper/'
-                    image='linkedin.png'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/fhtzoz4b5aqgm7km8dml.png'
                     alt='LinkedinMain'
                 />
             </article>
@@ -76,12 +76,12 @@ export default function CollaboratorsComp(): JSX.Element {
                 />
                 <ButtonLinkImage
                     url='https://github.com/Juanlopez01'
-                    image='gitHub.webp'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/gcjvuqlzfwhdss0jlrtp.webp'
                     alt='githubMail'
                 />
                 <ButtonLinkImage
                     url='https://www.linkedin.com/in/juanlopez01/'
-                    image='linkedin.png'
+                    image='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/photo/linkedin-github/fhtzoz4b5aqgm7km8dml.png'
                     alt='LinkedinJuan'
                 />
             </article>
