@@ -39,7 +39,7 @@ export default function HomeComponents(): JSX.Element {
                     <section>
                         <header id='Healthy-Life'><h3>Healthy-Life 🍲</h3></header>
                         <Image
-                            src='/../public/logo-projects/healthy.png'
+                            src='/../public/static/logo-projects/healthy.png'
                             width='100'
                             height='100'
                             alt='Sirun'
@@ -63,7 +63,7 @@ export default function HomeComponents(): JSX.Element {
                     <section>
                         <header id='Sirun-Pâtisserie'><h3>Sirun Pâtisserie 🥐🍪🎂</h3></header>
                         <Image
-                            src='/../public/logo-projects/sirun-logo.png'
+                            src='/../public/static/logo-projects/sirun-logo.png'
                             width='100'
                             height='100'
                             alt='Sirun'

@@ -11,7 +11,7 @@ export default function ImageTitleHardUl({ pack }: prop): JSX.Element {
         {pack.map((elem, index) => <li key={index}>
             <p>{elem.title}</p>
             <Image
-                src={`/../public/image-skills/hard/${elem.image}`}
+                src={`/../public/static/image-skills/hard/${elem.image}`}
                 alt={elem.title}
                 width='100'
                 height='100'

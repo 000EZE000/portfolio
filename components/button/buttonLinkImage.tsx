@@ -10,7 +10,7 @@ export default function ButtonLinkImage({ image, url, alt }: prop): JSX.Element 
     return (
         <a href={url} target='_black'>
             <Image
-                src={`/../public/photo/linkedin-github/${image}`}
+                src={`/../public/static/photo/linkedin-github/${image}`}
                 alt={alt}
                 width='40'
                 height='40'

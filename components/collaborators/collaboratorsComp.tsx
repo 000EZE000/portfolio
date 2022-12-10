@@ -6,7 +6,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Zarina Alexía Milanesio</h4></header>
             <article>
                 <Image
-                    src="/../public/photo/collaborators/Ale.png"
+                    src="/../public/static/photo/collaborators/Ale.png"
                     width='100'
                     height='100'
                     alt='Ale'
@@ -27,7 +27,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Francisco Sponton</h4></header>
             <article>
                 <Image
-                    src="/../public/photo/collaborators/Fran.png"
+                    src="/../public/static/photo/collaborators/Fran.png"
                     width='100'
                     height='100'
                     alt='fran'
@@ -48,7 +48,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Mailin Adaro</h4></header>
             <article>
                 <Image
-                    src="/../public/photo/collaborators/Mailin.png"
+                    src="/../public/static/photo/collaborators/Mailin.png"
                     width='100'
                     height='100'
                     alt='Mailin'
@@ -69,7 +69,7 @@ export default function CollaboratorsComp(): JSX.Element {
             <header><h4>Juan Lopez</h4></header>
             <article>
                 <Image
-                    src="/../public/photo/collaborators/Juan.png"
+                    src="/../public/static/photo/collaborators/Juan.png"
                     width='100'
                     height='100'
                     alt='Juan'

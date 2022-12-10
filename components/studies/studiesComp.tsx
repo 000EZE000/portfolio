@@ -16,7 +16,7 @@ export default function StudiesComp(): JSX.Element {
                 <header>
                     <h2>Bootcamp</h2>
                     <Image
-                        src='/../public/logo-studies/HENRY.png'
+                        src='/../public/static/logo-studies/HENRY.png'
                         width='1000'
                         height='200'
                         alt='Henry'
@@ -25,7 +25,7 @@ export default function StudiesComp(): JSX.Element {
                 <article>
                     <h2>Titulo obtenido</h2>
                     <Image
-                        src='/../public/certificate/CertificadoFullStack.png'
+                        src='/../public/static/certificate/CertificadoFullStack.png'
                         width='500'
                         height='500'
                         alt='certificate'
@@ -53,7 +53,7 @@ export default function StudiesComp(): JSX.Element {
                 <header>
                     <h3>Autodidacta</h3>
                     <Image
-                        src='/../public/logo-studies/autodidacta.jpg'
+                        src='/../public/static/logo-studies/autodidacta.jpg'
                         width='1000'
                         height='400'
                         alt='autodidacta'
