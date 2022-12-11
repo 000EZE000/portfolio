@@ -1,12 +1,13 @@
-import { NavBar, ContentStyled, LinkStyle } from './style'
+import style from './style/style.module.css'
+import Link from 'next/link'
 export default function Nav(): JSX.Element {
-    return <NavBar>
-        <ContentStyled>
-            <LinkStyle href={'/'}>Inicio</LinkStyle>
-            <LinkStyle href={'/about'}>Sobre Mi</LinkStyle>
-            <LinkStyle href={'/skills'}>Habilidades</LinkStyle>
-            <LinkStyle href={'/studies'}>Estudios</LinkStyle>
-            <LinkStyle href={'/contact'}>Enviame un email</LinkStyle>
-        </ContentStyled>
-    </NavBar>
+    return <nav className={style.nav}>
+        <div className={style.container}>
+            <Link className={style.link} href={'/'}>Inicio</Link>
+            <Link className={style.link} href={'/about'}>Sobre Mi</Link>
+            <Link className={style.link} href={'/skills'}>Habilidades</Link>
+            <Link className={style.link} href={'/studies'}>Estudios</Link>
+            <Link className={style.link} href={'/contact'}>Enviame un email</Link>
+        </div>
+    </nav>
 }

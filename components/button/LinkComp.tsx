@@ -1,10 +1,10 @@
 import Link from "next/link"
-import { LinkStyle } from "./style"
+import style from "./style/style.module.css"
 interface prop {
     link: string
     title: string
     target: string
 }
 export default function LinkComp({ link, title, target }: prop): JSX.Element {
-    return <LinkStyle href={link} target={target}>{title}</LinkStyle>
+    return <Link className={style.link} href={link} target={target}>{title}</Link>
 }
