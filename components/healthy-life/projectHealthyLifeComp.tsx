@@ -1,6 +1,6 @@
-import ButtonDeploy from "../button/buttonDeploy"
+import ButtonDeploy from "../button/LinkDeploy"
 import HeadComp from "@components/head/headComp"
-import ButtonRepo from "../button/buttonRepo"
+import ButtonRepo from "../button/LinkRepo"
 import Head from "next/head"
 export default function HealthyLifeComponentes(): JSX.Element {
     return <div>

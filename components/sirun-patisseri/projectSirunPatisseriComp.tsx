@@ -1,7 +1,7 @@
 import CollaboratorsComp from "@components/collaborators/collaboratorsComp"
 import HeadComp from "@components/head/headComp"
-import ButtonDeploy from "../button/buttonDeploy"
-import ButtonRepo from "../button/buttonRepo"
+import ButtonDeploy from "../button/LinkDeploy"
+import ButtonRepo from "../button/LinkRepo"
 export default function SirunPatisseriComponents(): JSX.Element {
     return <div>
         <HeadComp

@@ -1,7 +1,7 @@
 export { default as aboutComp } from './about/aboutComp';
-export { default as buttonDeploy } from './button/buttonDeploy';
-export { default as buttonLink } from './button/buttonLink';
-export { default as buttonRepo } from './button/buttonRepo';
+export { default as buttonDeploy } from './button/LinkDeploy';
+export { default as buttonLink } from './button/LinkComp';
+export { default as buttonRepo } from './button/LinkRepo';
 export { default as contactComp } from './contact/contactComp';
 export { default as footerComp } from './footer/footerComp';
 export { default as headComp } from './head/headComp';
