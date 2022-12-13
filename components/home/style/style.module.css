@@ -33,15 +33,18 @@
 }
 
 .article {
-    background-color: rgba(225, 225, 225, 0.1);
+    background: linear-gradient(90deg, #1d36c590, transparent) #2195f32b;
     padding: 1rem 2rem 2rem 2rem;
     margin: 2rem;
     color: #fff;
-    transition: all 4s ease;
+    transition: background-color 5s;
+    border-radius: 1rem;
 }
 
-.article:hover {
-    background-color: rgba(100, 100, 100, 0.8);
+.article:hover,
+.article:focus {
+    background-color: rgba(145, 49, 219, 0.9);
+    color: #fff;
 }
 
 .project {

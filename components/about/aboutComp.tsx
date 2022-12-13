@@ -3,53 +3,47 @@ import Image from "next/image"
 import HeadComp from "@components/head/headComp"
 import Footer from "@components/footer/footerComp"
 import Nav from "@components/navbar/navbarComp"
+import style from './style/style.module.css'
 export default function AboutComponents(): JSX.Element {
 
     const dateNow = new Date().toJSON().split('-')[0]
     const myAge = Number(dateNow) - 1997
 
-    return <div>
+    return <div className={style.div_father}>
         <HeadComp
             title="Sobre Mi"
             ico="eze.ico"
         />
         <Nav />
-        <main>
+        <main className={style.main} >
             <section>
-                <title>Mi camino a Desarrollador Web</title>
-                <article>
+                <div className={style.container_image_header}>
+                    <header className={style.header}><h1>Hola 👋, Soy Ezequiel Sosa </h1></header>
                     <Image
-                        src='/https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/o3oudtp3tzzmdnoa2ega.png'
+                        src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670805522/photo/kb6sinhetkgzqn8s8i9a.png'
                         alt="Ezequiel Sosa"
-                        width='100'
-                        height='100'
+                        width='300'
+                        height='300'
+                        className={style.image}
                     />
+
+                </div>
+                <article className={style.article}>
+                    <p>Si tuviera que describirme en una palabra, esa seria perseverancia.</p>
                     <p>
-                        Hola me llamo Ezequiel Sosa  y tengo {myAge} años,
-                        en el año 2022 deje mi trabajo que era Maestro de Obra,
-                        aunque era un buen trabajo y  ya habia escalado lo suficiente
-                        para hacer lider de Grupo.
+                        Antes de adentrarme el mundo tecnológico, yo me dedicaba (para resumir) a Construir edificios (Planos y dirección de Obras ).
                     </p>
                     <p>
-                        Tome la dura decision de cambiar el rumbo y llegue a la conclucion
-                        de que el trabajo que me especialize y Yo no eramos complatibles.
+                        El rubro Profesional era excelente, alcance el cargo <i><b>Maestro Mayor de Obra</b></i> y todo en el trascurso de 6 años, aun con todo el logro, no disfrutaba trabajar de eso.
                     </p>
                     <p>
-                        Era mi oportunidad para ver lo que me gustaba y aunque el area de tecnologia ofrece muchas
-                        opciones, El desarrolo Web era lo mio.
+                        Hasta que llego el año 2022 y decidí reinventarme, Metiéndome de lleno a esta hermosa profesión.
                     </p>
                     <p>
-                        Ahi conoci Henry un bootcamp donde desarrolle tanto hablidades duras,
-                        como blandas, empezando el 1 de agosto del 2022 hasta su finalizandolo el
-                        09 de diciembre del mismo año, con mas de 1000 hs de practica.
+                        Ahora bien, el camino no fue ni es fácil, pero disfruto todo lo que con lleva el desarrollo y la programación como tal.
                     </p>
                     <p>
-                        Soy una persona que le gusta tomar la inicitiva, que planea bien las cosas antes
-                        de comenzarlas y que busca la solucion mas optima, y si es necesario ser el lider.
-                    </p>
-                    <p>
-                        Trabajar en equipo es una de las experencias mas linda del bootcamp compartir
-                        codigo con personas que tiran para el mismo lado es algo increible.
+                        El desarrollo Web es el área que de trabajo donde me siento cómodo y Feliz!!.
                     </p>
                 </article>
             </section>

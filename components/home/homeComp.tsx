@@ -12,7 +12,8 @@ export default function HomeComponents(): JSX.Element {
             <section>
                 <header className={style.header}>FULL STACK DEVELOPER</header>
                 <article className={style.article}>
-                    <p className={style.titule_paragraph}>Bienvenidos a Mi Portfolio</p>
+                    <p className={style.titule_paragraph}> Hola 👋, Me llamo Ezequiel Sosa</p>
+                    <p className={style.titule_paragraph}>Bienvenidos a Mi Portfolio!!</p>
                     <p className={style.paragraph_body}>Unas cositas sobre de mi:</p>
                     <p className={style.paragraph_body}>
                         Me gusta los desafios y busco diferentes soluciones para cada problema,
