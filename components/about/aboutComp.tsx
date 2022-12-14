@@ -18,7 +18,6 @@ export default function AboutComponents(): JSX.Element {
         <main className={style.main} >
             <section>
                 <div className={style.container_image_header}>
-                    <header className={style.header}><h1>Hola 👋, Soy Ezequiel Sosa </h1></header>
                     <Image
                         src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670805522/photo/kb6sinhetkgzqn8s8i9a.png'
                         alt="Ezequiel Sosa"

@@ -1,10 +1,10 @@
 import HeadComp from '@components/head/headComp'
 import { ImageTitleHard } from '..'
-
+import style from './style/style.module.css'
 import Nav from '@components/navbar/navbarComp'
 import Footer from '@components/footer/footerComp'
 
-export default function SkillsComp(): JSX.Element {
+export default function SkillsComp() {
     interface pack {
         title: string
         image: string
@@ -21,13 +21,13 @@ export default function SkillsComp(): JSX.Element {
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/image-skills/hard/vtey4tvdv0jq2cklcz0z.png'
         }, {
             title: 'React',
-            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/s6oyei445tr4en1rmki2.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670952420/image-skills/hard/nxx63karjnn6mnwsnmgf.png'
         }, {
             title: 'Redux',
-            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/iukdjdzwwjnz44ql0hjq.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670952318/image-skills/hard/zkgj3f7bzy0ykfru5w0e.png'
         }, {
             title: 'Sequelize',
-            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707785/image-skills/hard/xbstidxcgclacnesgdts.png'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670952610/image-skills/hard/xjudpruosgxloozbsf2p.png'
         }, {
             title: 'Postgres',
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/jwudkux9ptn7gszy98ea.png'
@@ -36,7 +36,7 @@ export default function SkillsComp(): JSX.Element {
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707785/image-skills/hard/delriaafdtiu2zsppnug.png'
         }, {
             title: 'Prisma',
-            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/image-skills/hard/ibkjgxrwny6vpi54vneg.webp'
+            image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670952528/image-skills/hard/oacpazmvaprvzsaxq55a.png'
         }, {
             title: 'Typescript',
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/vnyv1od3zhmef4gwyoog.png'
@@ -44,7 +44,7 @@ export default function SkillsComp(): JSX.Element {
             title: 'Vercel',
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/qur929chfpvyiapdu83z.png'
         }, {
-            title: 'AWS Amazon',
+            title: 'AWS',
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/image-skills/hard/llxjhr1lpo0hiqeb4hhe.png'
         }, {
             title: 'Express',
@@ -52,7 +52,7 @@ export default function SkillsComp(): JSX.Element {
         },
     ]
 
-    return <div>
+    return <div className={style.div_father}>
         <HeadComp
             title='Habilidades'
             ico='eze.ico'
@@ -60,43 +60,36 @@ export default function SkillsComp(): JSX.Element {
         <Nav />
         <main>
             <section>
-                <header>Soft Skills</header>
-                <article>
-                    <ul>
-                        <li>
-                            Trabajo en equipo
-                        </li>
-                        <li>
-                            Resolución de problemas
-                        </li>
-                        <li>
-                            Comunicación
-                        </li>
-                        <li>
-                            Adaptabilidad
-                        </li>
-                        <li>
-                            Pensamiento crítico
-                        </li>
-                        <li>
-                            Manejo de conflictos
-                        </li>
-                        <li>
-                            Liderazgo
-                        </li>
-                    </ul>
+                <header className={style.title}>Soft Skills</header>
+                <article className={style.article}>
+                    <span className={style.span}>
+                        Trabajo en equipo
+                    </span>
+                    <span className={style.span}>
+                        Resolución de problemas
+                    </span>
+                    <span className={style.span}>
+                        Comunicación
+                    </span>
+                    <span className={style.span}>
+                        Adaptabilidad
+                    </span>
+                    <span className={style.span}>
+                        Pensamiento crítico
+                    </span>
+                    <span className={style.span}>
+                        Manejo de conflictos
+                    </span>
+                    <span className={style.span}>
+                        Liderazgo
+                    </span>
+
                 </article>
             </section>
             <section>
-                <header>Hard Skills</header>
-                <article>
+                <div className={style.container_title}><header className={style.title_hard}>Hard Skills</header></div>
+                <article className={style.article_hard}>
                     <ImageTitleHard pack={pack} />
-                </article>
-            </section>
-            <section>
-                <header>Ingles</header>
-                <article>
-                    <p>Por el momento Ingles tecnico</p>
                 </article>
             </section>
         </main>
