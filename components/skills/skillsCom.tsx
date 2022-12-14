@@ -51,7 +51,6 @@ export default function SkillsComp() {
             image: 'https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/image-skills/hard/ra0s8osdddgfktnymhze.png'
         },
     ]
-
     return <div className={style.div_father}>
         <HeadComp
             title='Habilidades'
@@ -89,7 +88,7 @@ export default function SkillsComp() {
             <section>
                 <div className={style.container_title}><header className={style.title_hard}>Hard Skills</header></div>
                 <article className={style.article_hard}>
-                    <ImageTitleHard pack={pack} />
+                    {ImageTitleHard({ pack })}
                 </article>
             </section>
         </main>

@@ -8,7 +8,7 @@ interface prop {
 }
 
 export default function ImageTitleHardUl({ pack }: prop) {
-    const myList = pack.map((elem, index) => <div className={style.container} key={index}>
+    const myList = pack.map((elem, index) => (<div className={style.container} key={index}>
         <p className={style.title}>{elem.title}</p>
         <Image
             className={style.image}
@@ -17,7 +17,7 @@ export default function ImageTitleHardUl({ pack }: prop) {
             width='100'
             height='100'
         />
-    </div>)
+    </div>))
 
     return myList
 
