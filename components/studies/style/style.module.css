@@ -1,0 +1,115 @@
+.div_father {
+    background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #3f27a1 100%);
+    position: relative;
+    top: 5rem;
+    padding: 1rem;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+}
+
+.titule_tecnologie {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.image_henry {
+    text-align: center;
+    border-bottom: 4px solid yellow;
+}
+
+.container_image {
+    display: flex;
+    justify-content: center;
+}
+
+.span {
+    padding: 2rem;
+    color: black;
+    font-size: 2rem;
+    background-color: yellow;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    transition: all ease 1s;
+
+}
+
+.span:hover {
+    color: #fdfdfd;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+.container_span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.title {
+    color: white;
+    font-size: 4rem;
+    margin: 2rem 0rem 0rem 1rem;
+}
+
+.container_button {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+
+}
+
+
+
+.button {
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #0a4d8bc6;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all ease 1s;
+    flex-wrap: wrap;
+
+}
+
+.button:hover {
+    background-color: rgba(140, 54, 184, 0.927);
+
+}
+
+.button:active {
+    transform: scale(1.1);
+}
+
+.title_autodidact {
+    color: white;
+    font-size: 4rem;
+    margin: 3rem 0rem 3rem 1rem;
+}
+
+
+.image_autodidact {
+    text-align: center;
+    width: 80vw;
+    border-bottom: 4px solid rgb(176, 15, 239);
+    margin-bottom: 2rem;
+}
+
+.span_autodidact {
+    padding: 2rem;
+    color: rgb(244, 237, 237);
+    font-size: 2rem;
+    background-color: rgba(117, 19, 229, 0.812);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    transition: all ease 1s;
+}
+
+.span_autodidact:hover {
+    background-color: rgba(117, 19, 229, 0.268);
+}

@@ -1,0 +1,39 @@
+.container_modal {
+    width: 98vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    top: 8rem;
+}
+
+.button_modal {
+    color: rgba(230, 19, 19, 0.708);
+    font-size: 5vw;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transform: rotate(45deg);
+    transition: all ease 1s;
+}
+
+.container_button_modal {
+    position: absolute;
+    z-index: 100;
+    top: 0.5rem;
+    right: 8vw;
+}
+
+.button_modal:hover {
+    color: rgb(255, 0, 0);
+    transform: rotate(135deg);
+}
+
+
+.image_modal {
+    position: relative;
+    width: 89vw;
+    height: 72vh;
+}
