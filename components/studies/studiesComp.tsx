@@ -58,7 +58,7 @@ export default function StudiesComp(): JSX.Element {
                     <h2 className={style.title_autodidact}>Autodidacta</h2>
                     <div className={style.container_image}>
                         <Image
-                            src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707786/logo-studies/rndnz2gfl86ctasxxowf.jpg'
+                            src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1671149352/logo-studies/qnjirue80leqotqpcp9t.jpg'
                             width='1000'
                             height='400'
                             alt='autodidacta'
