@@ -35,7 +35,7 @@ export default function StudiesComp(): JSX.Element {
                 <article className={style.container_span}>
                     {["CSS", "HTML", "Javascript", "React", "Redux", "Git",
                         "Express", "Sequilize", "Postgres", "NodeJs"
-                    ].map(tecno => <span className={style.span}>{tecno}</span>)
+                    ].map((tecno, index) => <span key={index} className={style.span}>{tecno}</span>)
                     }
                 </article>
                 <hr />
@@ -43,7 +43,7 @@ export default function StudiesComp(): JSX.Element {
                 <article className={style.container_span}>
                     {["Pair Programing", "Code Review", "Presentacion de Proyecto (Helthy)",
                         "Trabajo grupal (Sirun)"
-                    ].map(tecno => <span className={style.span}>{tecno}</span>)
+                    ].map((tecno, index) => <span key={index} className={style.span}>{tecno}</span>)
                     }
                 </article>
                 <article className={style.container_button}>
@@ -71,7 +71,7 @@ export default function StudiesComp(): JSX.Element {
                 <article className={style.container_span}>
                     {["Next js", "Prisma (ORM)", "Redux Toolkit-Persit",
                         "Typescript", "NextAuth", "Auth0", "Cloudinary", "Nodemailer", "Api Mercado Pago"
-                    ].map(tecno => <span className={style.span_autodidact}>{tecno}</span>)
+                    ].map((tecno, index) => <span key={index} className={style.span_autodidact}>{tecno}</span>)
                     }
                 </article>
             </section>
