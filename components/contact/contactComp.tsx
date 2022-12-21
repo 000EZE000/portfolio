@@ -73,7 +73,7 @@ export default function ContactComp(): JSX.Element {
                             status={{ setData: setInfEmail, data: infEmail }}
                         />
                         <div className={style.container_checkbox}>
-                            <Switch style={srt} onClick={handleOnClick} />
+                            <Switch style={srt} onClick={handleOnClick} checked={infEmail.confirm} />
                             <span className={style.span_checkbox}>Email de confirmacion</span>
                         </div>
                         <div className={infEmail.statusFeedBack ? style.container_feedback : style.container_false_feedback}>
