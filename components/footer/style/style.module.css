@@ -1,9 +1,9 @@
 .image {
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 
 .image:hover {
-    transform: rotate(15deg)
+    transform: scale(1.2)
 }
 
 .footer {

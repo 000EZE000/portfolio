@@ -31,21 +31,24 @@ export default function StudiesComp(): JSX.Element {
                         />
                     </div>
                 </header>
-                <h2 className={style.titule_tecnologie}>Tecnologias Aprendidas</h2>
-                <article className={style.container_span}>
-                    {["CSS", "HTML", "Javascript", "React", "Redux", "Git",
-                        "Express", "Sequilize", "Postgres", "NodeJs"
-                    ].map((tecno, index) => <span key={index} className={style.span}>{tecno}</span>)
-                    }
-                </article>
-                <hr />
-                <h2 className={style.titule_tecnologie}>Habilidades Blandas</h2>
-                <article className={style.container_span}>
-                    {["Pair Programing", "Code Review", "Presentacion de Proyecto (Helthy)",
-                        "Trabajo grupal (Sirun)"
-                    ].map((tecno, index) => <span key={index} className={style.span}>{tecno}</span>)
-                    }
-                </article>
+                <div>
+                    <h2 className={style.titule_tecnologie}>Tecnologias Aprendidas</h2>
+                    <article className={style.container_span}>
+                        {["CSS", "HTML", "Javascript", "React", "Redux", "Git",
+                            "Express", "Sequilize", "Postgres", "NodeJs"
+                        ].map((tecno, index) => <span key={index} className={style.span}>{tecno}</span>)
+                        }
+                    </article>
+                </div>
+                <div>
+                    <h2 className={style.titule_tecnologie}>Habilidades Blandas</h2>
+                    <article className={style.container_span}>
+                        {["Pair Programing", "Code Review", "Presentacion de Proyecto (Helthy)",
+                            "Trabajo grupal (Sirun)"
+                        ].map((tecno, index) => <span key={index} className={style.span}>{tecno}</span>)
+                        }
+                    </article>
+                </div>
                 <article className={style.container_button}>
                     <button onClick={openModalCertificate} className={style.button}>Certificado de Graduacion</button>
                     <button onClick={openModalMentions} className={style.button}>Menciones Honorificas</button>

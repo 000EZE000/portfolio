@@ -1,5 +1,5 @@
 import * as nodemailer from 'nodemailer'
-import { htmlConfirm, emailHtmlAdmin, htmlConfirmFeedback } from 'controller'
+import { htmlConfirm, emailHtmlAdmin, htmlConfirmFeedback } from '@components/contact/controller'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { status } from '@components/contact/models'
 export default function SendEmail(req: NextApiRequest, res: NextApiResponse) {
@@ -68,7 +68,7 @@ export default function SendEmail(req: NextApiRequest, res: NextApiResponse) {
     }
   } catch (error) {
     console.log(error);
-    return res.status(400).json({ msg: 'no se pudo' })
+    return res.status(400).json({ msg: 'no se pudo enviar el email' })
 
   }
 }

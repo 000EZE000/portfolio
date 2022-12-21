@@ -17,7 +17,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
     html {
-        color-scheme: dark;
+        color-scheme: white;
     }
 
     body {
@@ -26,6 +26,6 @@ a {
     }
 }
 
-.hola{
-background-color: rgba(145, 49, 219, 0.631);
+.hola {
+    background-color: rgba(145, 49, 219, 0.631);
 }
