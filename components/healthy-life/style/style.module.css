@@ -1,0 +1,119 @@
+.div_father {
+    background-image: linear-gradient(330deg, #057192 0, #125c7a 25%, #1f4459 50%, #131a20 75%, #340753 100%);
+    position: relative;
+    top: 5rem;
+    padding: 1rem;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: rgba(40, 173, 206, 0.926);
+    padding: 0;
+    margin: 0;
+    border-bottom: 0.2rem solid rgb(255, 255, 255);
+}
+
+.paragraph_content {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.father_title_technologies {
+    font-size: 2rem;
+}
+
+.title_technologies {
+    display: block;
+    font-size: 1.5rem;
+
+    width: 22rem;
+    padding: 0.8rem;
+    transition: all ease 1s;
+}
+
+.title_technologies:hover {
+    border-right: 0.1rem solid white;
+    background-color: rgba(195, 32, 124, 0.809);
+    border-radius: 1rem;
+}
+
+.content_span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.span {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+    background-color: rgba(74, 91, 91, 0.619);
+    border: 0.1rem solid rgba(255, 255, 255, 0.345);
+}
+
+.content_request {
+    display: flex;
+    padding-left: 1rem;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.span_request {
+    padding: 1rem;
+    margin: 1rem;
+
+    font-size: 1.3rem;
+    background-color: rgba(29, 86, 136, 0.437);
+    transition: all ease 1s;
+}
+
+.span_request:hover {
+    border: none;
+    transform: scaleY(1.6);
+    border-right: 0.6rem solid #ffffff;
+}
+
+.container_image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0.1rem;
+}
+
+.image {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1rem;
+    transition: all ease 2s;
+    cursor: pointer;
+    margin: 0.4rem;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+.title_time {
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 0.2rem solid rgba(65, 26, 209, 0.559);
+    margin-bottom: 1rem;
+}
+
+.container_button_deploy_repo {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
