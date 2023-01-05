@@ -113,11 +113,6 @@ export default function HealthyLifeComponentes(): JSX.Element {
                 </div>
             </section>
             <section>
-                <header className={style.title_time}>
-                    <p>Tiempo de ejecucion: 3 semanas</p>
-                </header>
-            </section>
-            <section>
                 <div className={style.container_button_deploy_repo}>
                     <ButtonDeploy />
                     <ButtonRepo />

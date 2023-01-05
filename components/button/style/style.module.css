@@ -17,3 +17,14 @@
 .link:active {
     box-shadow: rgba(225, 225, 225, 0.4) 0px 5px, rgba(225, 225, 225, 0.4) 0px 5px, rgba(225, 225, 225, 0.4) 0px 5px;
 }
+
+.image_botton {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    transition: all ease 2s;
+}
+
+.image_botton:hover {
+    transform: scale(1.5);
+}

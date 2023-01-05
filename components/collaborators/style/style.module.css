@@ -1,0 +1,24 @@
+.container_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header {
+    font-size: 2rem;
+}
+
+.section {
+    text-align: center;
+    width: 30rem;
+    background-color: rgba(79, 112, 175, 0.522);
+    border-radius: 0.4rem;
+    padding: 2rem;
+    margin: 1rem;
+    transition: all ease 2s;
+}
+
+.section:hover {
+    background-color: rgb(74, 15, 146);
+}
