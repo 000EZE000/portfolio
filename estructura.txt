@@ -1,0 +1,20 @@
+quiero que tenga una navbar que tenga los siguientes item:
+about
+my skill
+my proyects
+home 
+studies
+
+
+
+home ---
+===
+name 
+titule 
+body=
+photo
+description
+footer
+cel email github linkiedin
+===
+

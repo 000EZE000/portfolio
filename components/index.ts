@@ -1,0 +1,14 @@
+export { default as aboutComp } from './about/aboutComp';
+export { default as buttonDeploy } from './button/LinkDeploy';
+export { default as buttonLink } from './button/LinkComp';
+export { default as buttonRepo } from './button/LinkRepo';
+export { default as contactComp } from './contact/contactComp';
+export { default as footerComp } from './footer/footerComp';
+export { default as headComp } from './head/headComp';
+export { default as projectHealthyLifeComp } from './healthy-life/projectHealthyLifeComp';
+export { default as homeComp } from './home/homeComp';
+export { default as ImageTitleHard } from './image-skills/ImageTitleHard';
+export { default as navbarComp } from './navbar/navbarComp';
+export { default as projectSirunPatisseriComp } from './sirun-patisseri/projectSirunPatisseriComp';
+export { default as skillsCom } from './skills/skillsCom';
+export { default as studiesComp } from './studies/studiesComp';

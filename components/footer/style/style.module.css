@@ -1,0 +1,18 @@
+.image {
+    transition: all 1s ease;
+}
+
+.image:hover {
+    transform: scale(1.2)
+}
+
+.footer {
+    display: flex;
+    width: 104%;
+    position: relative;
+    right: 1rem;
+    top: 3rem;
+    padding: 2rem;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
+}

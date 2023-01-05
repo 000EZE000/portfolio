@@ -1,0 +1,115 @@
+.div_father {
+    background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
+    position: relative;
+    top: 5rem;
+    padding: 1rem;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header {
+    background-image: url('https://res.cloudinary.com/dqhbskhe7/image/upload/v1670711135/css/background/xth2saawkgqzvgadzmfj.jpg');
+    background-attachment: fixed;
+    color: white;
+    font-size: 3rem;
+    padding: 4rem;
+    border-bottom: 3px solid black;
+    position: relative;
+    bottom: 16px;
+    transition: all 2s ease;
+    text-align: center;
+}
+
+.header:hover {
+    letter-spacing: 3px;
+    color: rgba(145, 49, 219, 0.9);
+}
+
+.article {
+    background: linear-gradient(90deg, #1d36c590, transparent) #2195f32b;
+    padding: 1rem 2rem 2rem 2rem;
+    margin: 2rem;
+    color: #fff;
+    transition: background-color 5s;
+    border-radius: 1rem;
+}
+
+.article:hover,
+.article:focus {
+    background-color: rgba(145, 49, 219, 0.9);
+    color: #fff;
+}
+
+.project {
+    font-size: 3rem;
+    padding: 4rem;
+    color: white;
+    border-bottom: 3px solid white;
+    width: 100%;
+    position: relative;
+    bottom: 16px;
+    text-align: center;
+}
+
+.titule_paragraph {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.paragraph_body {
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.seccion_card {
+    display: flex;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    color: bisque;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s ease;
+    border-radius: 3rem;
+    background-color: rgba(145, 49, 219, 0.3);
+}
+
+.seccion_card:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.image {
+    margin: 2rem;
+}
+
+.container_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.article_paragraph {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+    width: 25rem;
+}
