@@ -3,7 +3,39 @@ import HeadComp from "@components/head/headComp"
 import ButtonDeploy from "../button/LinkDeploy"
 import ButtonRepo from "../button/LinkRepo"
 import style from './style/style.module.css'
+import {useState} from "react"
+import Image from "next/image"
+import Modal from "@components/modal/modal"
 export default function SirunPatisseriComponents(): JSX.Element {
+    const [openModal,setOpenModal] = useState(false);
+    const [imageUrl,setImageUrl] = useState('');
+
+const userImage =[
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672955938/sirun%20patisserie/bd7qmceclyp4vjvtyj1f.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/u9lql5q9kysasp1wgp3m.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/wwyqkrs9ndt7vxuhhg0k.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/mr94hcuja2kx0ear5rtq.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/vsiretskumpkqxwdrgk8.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/zmaozd19magmatni2qm8.png',
+]
+const adminImage = [
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/mafp9wk0zarf6bux5s0b.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/xkhjijncuu81nss94lrk.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/g2kks3iab20kfmv1kl4e.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/fzk5guiqzfyhsxysewzl.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/ezelhqt7abxnb6izetbm.png'
+
+]
+const appImage = [
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/ivvlwp6z9udfrng6jhfm.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/k5h6hcfuhdsyqxbnm6kt.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939662/sirun%20patisserie/ryoknftakpyeff26b8bx.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939790/sirun%20patisserie/oo5nxxqfldtls5blvjb2.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939789/sirun%20patisserie/jm5ngkv7ly2jmaumefd2.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939789/sirun%20patisserie/yt1r8wxbvgquc1tilss1.png',
+    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939718/sirun%20patisserie/fkz82qpn5gsf9ug0fkb5.png'
+]
+
     interface prop {
         array: string[]
     }
@@ -97,7 +129,57 @@ export default function SirunPatisseriComponents(): JSX.Element {
             </section>
             <section>
                 <header><h3>Fotos</h3></header>
-
+                <p>Parte Usuario</p>
+                <div className={style.container_image}>
+                    {userImage.map((image, index) =>
+                        <Image
+                            key={index}
+                            src={image}
+                            height='2000'
+                            width='2000'
+                            alt='image'
+                            className={style.image}
+                            onClick={() => {
+                                setImageUrl(image)
+                                setOpenModal(!openModal)
+                            }}
+                        />
+                    )}
+                </div>
+                <p>Parte Admin</p>
+                <div className={style.container_image}>
+                    {adminImage.map((image, index) =>
+                        <Image
+                            key={index}
+                            src={image}
+                            height='2000'
+                            width='2000'
+                            alt='image'
+                            className={style.image}
+                            onClick={() => {
+                                setImageUrl(image)
+                                setOpenModal(!openModal)
+                            }}
+                        />
+                    )}
+                </div>
+                <p>App</p>
+         <div className={style.container_image}>
+                    {appImage.map((image, index) =>
+                        <Image
+                            key={index}
+                            src={image}
+                            height='2000'
+                            width='2000'
+                            alt='image'
+                            className={style.image}
+                            onClick={() => {
+                                setImageUrl(image)
+                                setOpenModal(!openModal)
+                            }}
+                        />
+                    )}
+                    </div>
             </section>
             <section>
                 <header><h3>Deploy y Repo</h3></header>
@@ -105,6 +187,10 @@ export default function SirunPatisseriComponents(): JSX.Element {
                 <ButtonRepo />
             </section>
         </main>
-
+<Modal
+openModal={setOpenModal}
+image={imageUrl}
+switchModal={openModal}
+/>
     </div>
 }
