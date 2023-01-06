@@ -1,20 +1,61 @@
-.image {
-    transition: all 1s ease;
-    width: 3rem;
-    height: 3rem;
+@media (min-width: 700px) {
+
+    .image {
+        transition: all 1s ease;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .image:hover {
+        transform: scale(1.2)
+    }
+
+    .footer {
+        display: flex;
+        width: 104%;
+        position: relative;
+        right: 1rem;
+        top: 3rem;
+        padding: 1rem;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
+    }
+
 }
 
-.image:hover {
-    transform: scale(1.2)
+@media (min-width: 500px) {
+    .image {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .footer {
+        display: flex;
+        width: 105%;
+        position: relative;
+        right: 1rem;
+        top: 3rem;
+        padding: 1rem;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
+    }
+
 }
 
-.footer {
-    display: flex;
-    width: 104%;
-    position: relative;
-    right: 1rem;
-    top: 3rem;
-    padding: 1rem;
-    justify-content: space-around;
-    background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
+@media (min-width: 200px) {
+    .image {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .footer {
+        display: flex;
+        width: 105%;
+        position: relative;
+        right: 1rem;
+        top: 3rem;
+        padding: 1rem;
+        justify-content: space-around;
+        background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
+    }
 }

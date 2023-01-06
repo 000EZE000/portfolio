@@ -39,13 +39,13 @@ export default function HomeComponents(): JSX.Element {
                             alt='Healthy-Life'
                         />
                         <article className={style.article_paragraph}>
-                            <h2  className={style.title_Proyect}>Healthy-Life</h2>
+                            <h2 className={style.title_Proyect}>Healthy-Life</h2>
                             <p>Proyecto individual de Soy Henry</p>
                             <p>App de Recetas de comidas</p>
                         </article>
                         <div className={style.container_link}>
                             <LinkHealthy />
-                            <LinkComp title="Deploy en Proceso" link="#" target="" />
+                            <LinkComp title="En ello..." link="#" target="" />
                             <LinkComp title="Repositorio" link="https://github.com/000EZE000/Healthy-Life" target=" " />
                         </div>
                     </section>

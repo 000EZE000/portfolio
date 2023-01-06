@@ -17,7 +17,7 @@ export default function Nav(): JSX.Element {
                 onClick={() => {
                     setSwitchNav(!switchNav)
 
-                }}>{switchNav ? "✕" : "≡"}</button>
+                }}>{switchNav ? "ⅹ" : "≡"}</button>
         </div>
         {switchNav && <div>
             <div className={style.nav_response_open}>
