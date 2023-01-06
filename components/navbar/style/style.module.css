@@ -44,13 +44,12 @@
     }
 
     .nav_response_close {
-        right: 1rem;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        bottom: 4rem;
-        width: 105%;
+        position: absolute;
+        top: -5rem;
+        left: 0.0001rem;
         background-color: aqua;
+        z-index: 4000;
+        width: 100%;
     }
 
     .link {
@@ -63,6 +62,8 @@
 
     .button_response {
         font-size: 4rem;
+        position: relative;
+        left: 90%;
         z-index: 3000;
     }
 
