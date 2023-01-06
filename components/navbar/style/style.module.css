@@ -1,35 +1,80 @@
-.nav {
-    width: 100%;
-    top: 0px;
-    right: 0px;
-    position: fixed;
-    background-image: linear-gradient(to bottom right, rgb(0, 191, 255), rgb(137, 69, 177));
-    z-index: 100;
+@media (min-width: 700px) {
+    .nav {
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        position: fixed;
+        background-image: linear-gradient(to bottom right, rgb(0, 191, 255), rgb(137, 69, 177));
+        z-index: 100;
+    }
+
+    .container {
+        margin: 0%;
+        padding: 0.2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 0.5rem;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 2rem;
+        transition: all 2s ease;
+        font-size: 1rem;
+    }
+
+    .link:hover {
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    .link:active {
+        background-color: black;
+        transform: scale(1.2);
+    }
+
 }
 
-.container {
-    margin: 0%;
-    padding: 0.2rem;
-    display: flex;
-    justify-content: center;
-}
 
-.link {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 0.5rem;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 2rem;
-    transition: all 2s ease;
-    font-size: 1rem;
-}
+@media (max-width: 500px) {
+    .container {
+        display: none;
+    }
 
-.link:hover {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
+    .nav_response_close {
+        right: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        bottom: 4rem;
+        width: 105%;
+        background-color: aqua;
+    }
 
-.link:active {
-    background-color: black;
-    transform: scale(1.2);
+    .link {
+        display: block;
+        padding: 0.1rem;
+        margin: 2rem;
+        width: 20rem;
+        font-size: 2rem;
+    }
+
+    .button_response {
+        font-size: 4rem;
+        z-index: 3000;
+    }
+
+    .nav_response_open {
+        right: 1rem;
+        position: absolute;
+        display: flex;
+        left: 0rem;
+        top: -2.5rem;
+        flex-direction: column;
+        z-index: 2000;
+        width: 100%;
+        background-color: aqua;
+    }
 }
