@@ -35,6 +35,10 @@
         transform: scale(1.2);
     }
 
+    .button_response {
+        display: none;
+    }
+
 }
 
 
@@ -44,12 +48,13 @@
     }
 
     .nav_response_close {
-        position: absolute;
-        top: -5rem;
-        left: 0.0001rem;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
         background-color: aqua;
         z-index: 4000;
         width: 100%;
+        background-image: linear-gradient(to top left, rgb(0, 191, 255), rgb(137, 69, 177));
     }
 
     .link {
@@ -61,21 +66,25 @@
     }
 
     .button_response {
-        font-size: 4rem;
+        font-size: 8rem;
         position: relative;
-        left: 90%;
+        left: 84%;
         z-index: 3000;
+        background-color: transparent;
+        border: none;
+
     }
 
     .nav_response_open {
         right: 1rem;
-        position: absolute;
+        color: white;
+        position: fixed;
         display: flex;
         left: 0rem;
-        top: -2.5rem;
+        top: 9rem;
         flex-direction: column;
         z-index: 2000;
         width: 100%;
-        background-color: aqua;
+        background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
     }
 }
