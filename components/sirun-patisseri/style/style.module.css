@@ -36,8 +36,8 @@
 
 .title_technologies {
     position: relative;
-    width: 18rem;
-    font-size: 1.3rem;
+    width: 15rem;
+    font-size: 1.1rem;
     transition: all ease 1s;
     text-align: center;
     background-color: rgba(100, 47, 166, 0.532);
@@ -62,8 +62,8 @@
 .container_technologie {
     margin: 0.3rem;
     background-color: rgba(33, 92, 186, 0.345);
-    width: 18rem;
-    height: 14rem;
+    width: 15rem;
+    height: 11rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -115,16 +115,16 @@
 }
 
 .image {
-    width: 25rem;
-    height: 25rem;
+    width: 9rem;
+    height: 8rem;
     border-radius: 1rem;
     transition: all ease 2s;
     cursor: pointer;
-    margin: 0.4rem;
+    margin: 0.1rem 0.4rem 0.1rem 0.4rem;
 }
 
 .image:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 .header_image {

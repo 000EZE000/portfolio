@@ -137,8 +137,8 @@ export default function ContactComp(): JSX.Element {
                         <Image
                             src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707790/logo-contact/cmdyxpbwt74yafdxaiaq.webp'
                             alt="Whatsapp"
-                            width='110'
-                            height='110'
+                            width='90'
+                            height='90'
                             className={style.contact_imageloc}
                         />
                     </Link>
@@ -150,8 +150,8 @@ export default function ContactComp(): JSX.Element {
                         <Image
                             src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/sq7ueypjvqzegmyrga0l.png'
                             alt="Linkedin"
-                            width='110'
-                            height='110'
+                            width='90'
+                            height='90'
                         />
                     </Link>
                     <Link
@@ -162,8 +162,8 @@ export default function ContactComp(): JSX.Element {
                         <Image
                             src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707784/logo-contact/p8ax9risj5togq4nz5ml.webp'
                             alt="GitHub"
-                            width='110'
-                            height='110'
+                            width='90'
+                            height='90'
                         />
                     </Link>
                     <Link
@@ -174,8 +174,8 @@ export default function ContactComp(): JSX.Element {
                         <Image
                             src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/c2gy7bl5wsbhomdxd1pg.png'
                             alt="Twitter"
-                            width='110'
-                            height='110'
+                            width='90'
+                            height='90'
                         />
                     </Link>
                     <Link
@@ -185,8 +185,8 @@ export default function ContactComp(): JSX.Element {
                         <Image
                             src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/mi1pyplpbcnt8dishtvw.png'
                             alt="CV"
-                            width='110'
-                            height='110'
+                            width='90'
+                            height='90'
                         />
                     </Link>
                 </article>

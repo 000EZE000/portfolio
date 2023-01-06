@@ -1,12 +1,13 @@
 .container_modal {
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
-    top: 8rem;
+    top: -1rem;
+    z-index: 1000;
 }
 
 .button_modal {
@@ -15,25 +16,27 @@
     border-radius: 50%;
     border: none;
     background-color: transparent;
-    transform: rotate(45deg);
     transition: all ease 1s;
 }
 
 .container_button_modal {
     position: absolute;
     z-index: 100;
-    top: 0.5rem;
-    right: 8vw;
+    top: 8vw;
+    right: 12vw;
 }
 
 .button_modal:hover {
     color: rgb(255, 0, 0);
-    transform: rotate(135deg);
+    transform: rotate(360deg);
 }
 
 
 .image_modal {
     position: relative;
+    top: 3rem;
+    right: 2rem;
+    position: relative;
     width: 89vw;
-    height: 72vh;
+    height: 90vh;
 }

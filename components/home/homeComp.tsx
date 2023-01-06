@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { LinkDeploy, LinkRepo, LinkSirun, LinkHealthy } from "@components/button"
+import { LinkDeploy, LinkRepo, LinkSirun, LinkHealthy, LinkComp } from "@components/button"
 import style from './style/style.module.css'
 import Nav from "@components/navbar/navbarComp"
 import Footer from "@components/footer/footerComp"
@@ -45,8 +45,8 @@ export default function HomeComponents(): JSX.Element {
                         </article>
                         <div className={style.container_link}>
                             <LinkHealthy />
-                            <LinkDeploy />
-                            <LinkRepo />
+                            <LinkComp title="Deplo en Proceso" link="#" target="" />
+                            <LinkComp title="Repositorio" link="https://github.com/000EZE000/Healthy-Life" target=" " />
                         </div>
                     </section>
                     <section className={style.seccion_card}>

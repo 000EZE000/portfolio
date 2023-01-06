@@ -40,9 +40,7 @@ export default function HealthyLifeComponentes(): JSX.Element {
         />
         <main className={style.main}>
             <section>
-                <header className={style.title}>
-                    <h1>Healthy Life</h1>
-                </header>
+                <header className={style.title}>Healthy Life</header>
                 <article>
                     <p className={style.paragraph_content}>
                         El proyecto consistia en hacer una Aplicacion Full Stack ,
@@ -55,43 +53,45 @@ export default function HealthyLifeComponentes(): JSX.Element {
                         Tecnologias Usadas
                     </p>
                 </div>
-                <article>
-                    <span className={style.title_technologies}>Front-End</span>
-                    <div className={style.content_span}>
-                        <Span array={['Javascript', 'CSS', 'HTML', 'React', 'Redux']} />
+                <article className={style.content_technologie}>
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies}>Front-End</p>
+                        <div className={style.content_span}>
+                            <Span array={['Javascript', 'CSS', 'HTML', 'React', 'Redux']} />
+                        </div>
                     </div>
-                    <span className={style.title_technologies}>Back-End</span>
-                    <div className={style.content_span}>
-                        <Span array={['Javascript', 'Express', 'Node js']} />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies}>Back-End</p>
+                        <div className={style.content_span}>
+                            <Span array={['Javascript', 'Express', 'Node js']} />
+                        </div>
                     </div>
-                    <span className={style.title_technologies}>Bases de Datos</span>
-                    <div className={style.content_span}>
-                        <Span array={['Sequileze', 'Postgres']} />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies}>Bases de Datos</p>
+                        <div className={style.content_span}>
+                            <Span array={['Sequileze', 'Postgres']} />
+                        </div>
                     </div>
-                    <span className={style.title_technologies}>Control de Versiones</span>
-                    <div className={style.content_span}>
-                        <Span array={['Git', 'GitHub']} />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies}>Control de Versiones</p>
+                        <div className={style.content_span}>
+                            <Span array={['Git', 'GitHub']} />
+                        </div>
                     </div>
                 </article>
+                <article className={style.content_span_request}>
+                    <p className={style.father_title_technologies}>Requerimentos</p>
 
-                <article>
-
-                    <p className={style.father_title_technologies}>
-                        Requerimentos
-                    </p>
-                    <div className={style.content_request}>
-                        {
-                            [
-                                '✅ Home: donde explica cada seccion de la Aplicacion.',
-                                '✅ Navbar: donde podemos navegar a cada seccion.',
-                                '✅ Recetas: donde mostrara una Lista de Recetas donde se puede buscar y Filtrar.',
-                                '✅ Detalle: donde mostrara el detalle Receta.',
-                                '✅ Creacion: se puede crear tanto recetas como dietas y podemos vincular entre si.',
-                                '✅ ⌛ Tiempo de Ejecucion: 3 semanas',
-                            ].map((item, index) => <span key={index} className={style.span_request} >{item}</span>)
-                        }
-                    </div>
-
+                    {
+                        [
+                            '✅ Home: donde explica cada seccion de la Aplicacion.',
+                            '✅ Navbar: donde podemos navegar a cada seccion.',
+                            '✅ Recetas: donde mostrara una Lista de Recetas donde se puede buscar y Filtrar.',
+                            '✅ Detalle: donde mostrara el detalle Receta.',
+                            '✅ Creacion: se puede crear tanto recetas como dietas y podemos vincular entre si.',
+                            '✅ ⌛ Tiempo de Ejecucion: 3 semanas',
+                        ].map((item, index) => <span key={index} className={style.span_request} >{item}</span>)
+                    }
                 </article>
             </section>
             <section >

@@ -10,7 +10,7 @@ interface prop {
 
 export default function Modal({ openModal, image, switchModal }: prop): JSX.Element {
     return <div>{switchModal && <div className={style.container_modal}><div className={style.modal}>
-        <div className={style.container_button_modal}><button className={style.button_modal} onClick={() => openModal()}>✚</button></div>
+        <div className={style.container_button_modal}><button className={style.button_modal} onClick={() => openModal()}>❌</button></div>
         <Image
             className={style.image_modal}
             src={image}

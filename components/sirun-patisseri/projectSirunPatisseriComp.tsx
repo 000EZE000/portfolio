@@ -57,15 +57,17 @@ export default function SirunPatisseriComponents(): JSX.Element {
                         minimos que se nos pedia , fuimos por mas, y esta ves podiamos usar cualquier tecnologia.
                     </p>
                 </article>
-                <p className={style.father_title_technologies}>
-                    Tecnologias Usadas
-                </p>
+                <div>
+                    <p className={style.father_title_technologies}>
+                        Tecnologias Usadas
+                    </p>
+                </div>
                 <article className={style.content_technologie}>
                     <div className={style.container_technologie}>
                         <p className={style.title_technologies} >Front end</p>
                         <div className={style.content_span}>
                             <Span
-                                array={['Typescript', 'CSS', 'HTML', 'React', 'Redux(persist, tookit)', 'Nextjs']}
+                                array={['Typescript', 'CSS', 'HTML', 'React', 'Redux', 'Nextjs']}
                             />
                         </div>
                     </div>
@@ -98,7 +100,15 @@ export default function SirunPatisseriComponents(): JSX.Element {
                         <p className={style.title_technologies} >APIS</p>
                         <div className={style.content_span}>
                             <Span
-                                array={['Auth0', 'Next-auth', 'Cloudinary', 'Mercado Pago']}
+                                array={['Cloudinary', 'MercadoPago']}
+                            />
+                        </div>
+                    </div>
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Autenticacion</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Auth0', 'Next-auth',]}
                             />
                         </div>
                     </div>
@@ -106,7 +116,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
                         <p className={style.title_technologies} >Deploy</p>
                         <div className={style.content_span}>
                             <Span
-                                array={['Base de Datos: AWS Amazon', 'Client & Server: Vercel']}
+                                array={['AWS Amazon', 'Vercel']}
                             />
                         </div>
                     </div>
@@ -143,7 +153,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
             </section>
             <section>
                 <header className={style.header_image}><h3>Fotos</h3></header>
-                <p className={style.title_section_image}>Parte Usuario</p>
+                <p className={style.title_section_image}>Rol de Usuario</p>
                 <div className={style.container_image}>
                     {userImage.map((image, index) =>
                         <Image
@@ -160,7 +170,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
                         />
                     )}
                 </div>
-                <p className={style.title_section_image}>Parte Admin</p>
+                <p className={style.title_section_image}>Rol de Administracion</p>
                 <div className={style.container_image}>
                     {adminImage.map((image, index) =>
                         <Image
@@ -177,7 +187,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
                         />
                     )}
                 </div>
-                <p className={style.title_section_image}>App</p>
+                <p className={style.title_section_image}>Rol de la Aplicacion</p>
                 <div className={style.container_image}>
                     {appImage.map((image, index) =>
                         <Image
