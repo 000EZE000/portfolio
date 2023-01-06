@@ -116,11 +116,12 @@
     }
 }
 
+/* ------------------------------------------------------------------------- */
 @media (max-width: 500px) {
     .div_father {
         background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
         position: relative;
-        top: 8.6rem;
+        top: 5rem;
         padding: 1rem;
         left: 0px;
         right: 0px;
@@ -138,13 +139,14 @@
         background-attachment: fixed;
         color: rgb(82, 202, 243);
         font-size: 2rem;
-        padding: 2rem;
+        padding: 4rem 2rem 2rem 2rem;
         border-bottom: 3px solid black;
         position: relative;
         bottom: 16px;
         transition: all 2s ease;
         text-align: center;
         margin: 0;
+        height: 10rem;
     }
 
     .header:hover {
@@ -155,16 +157,9 @@
     .article {
         background: linear-gradient(90deg, #1d36c590, transparent) #2195f32b;
         padding: 1rem 2rem 1rem 2rem;
-        margin: 2.4rem 2.4rem 3.4rem 2.4rem;
+        margin: 1rem 0rem 2rem 0rem;
         color: white;
-        transition: all ease 2s;
         border-radius: 1rem;
-    }
-
-    .article:hover,
-    .article:focus {
-        background-color: rgba(145, 49, 219, 0.9);
-        transform: scale(1.1);
     }
 
     .project {
@@ -174,17 +169,17 @@
         border-top: 3px solid white;
         width: 100%;
         position: relative;
-        bottom: 16px;
         text-align: center;
     }
 
     .titule_paragraph {
-        font-size: 1.3rem;
+        text-align: justify;
+        font-size: 1.6rem;
         text-align: center;
     }
 
     .paragraph_body {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
     }
 
     .container {
@@ -192,28 +187,24 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 2rem;
         padding: 1rem;
     }
 
     .seccion_card {
         display: flex;
-        margin: 0.5rem;
-        color: bisque;
-        flex-direction: row;
+        margin: 0.9rem;
+
+        width: 18rem;
+        color: rgb(255, 255, 255);
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        transition: all 1s ease;
-        border-radius: 3rem;
+        border-radius: 1rem;
         background-color: rgba(145, 49, 219, 0.3);
     }
 
-    .seccion_card:hover {
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    }
-
     .image {
-        margin: 2rem;
+        margin: 0.6rem;
     }
 
     .container_link {
@@ -223,18 +214,23 @@
         margin: 1rem;
     }
 
+    .title_Proyect {
+        font-size: 1.9rem;
+        width: 18rem;
+    }
+
     .article_paragraph {
         text-align: center;
         display: flex;
         flex-direction: column;
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 1rem;
         align-items: center;
         width: 15rem;
     }
-
 }
 
+/* ==================================================================== mobie */
 @media (max-width: 290px) {
     .div_father {
         background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
@@ -257,13 +253,14 @@
         background-attachment: fixed;
         color: rgb(82, 202, 243);
         font-size: 2rem;
-        padding: 2rem;
+        padding: 4rem 2rem 2rem 2rem;
         border-bottom: 3px solid black;
         position: relative;
         bottom: 16px;
         transition: all 2s ease;
         text-align: center;
         margin: 0;
+        height: 10rem;
     }
 
     .header:hover {
@@ -274,16 +271,9 @@
     .article {
         background: linear-gradient(90deg, #1d36c590, transparent) #2195f32b;
         padding: 1rem 2rem 1rem 2rem;
-        margin: 2.4rem 2.4rem 3.4rem 2.4rem;
+        margin: 1rem 0rem 2rem 0rem;
         color: white;
-        transition: all ease 2s;
         border-radius: 1rem;
-    }
-
-    .article:hover,
-    .article:focus {
-        background-color: rgba(145, 49, 219, 0.9);
-        transform: scale(1.1);
     }
 
     .project {
@@ -293,17 +283,17 @@
         border-top: 3px solid white;
         width: 100%;
         position: relative;
-        bottom: 16px;
         text-align: center;
     }
 
     .titule_paragraph {
-        font-size: 1.3rem;
+        text-align: justify;
+        font-size: 1.6rem;
         text-align: center;
     }
 
     .paragraph_body {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
     }
 
     .container {
@@ -311,28 +301,24 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 2rem;
         padding: 1rem;
     }
 
     .seccion_card {
         display: flex;
-        margin: 0.5rem;
-        color: bisque;
-        flex-direction: row;
+        margin: 0.9rem;
+
+        width: 18rem;
+        color: rgb(255, 255, 255);
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        transition: all 1s ease;
-        border-radius: 3rem;
+        border-radius: 1rem;
         background-color: rgba(145, 49, 219, 0.3);
     }
 
-    .seccion_card:hover {
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    }
-
     .image {
-        margin: 2rem;
+        margin: 0.6rem;
     }
 
     .container_link {
@@ -342,11 +328,16 @@
         margin: 1rem;
     }
 
+    .title_Proyect {
+        font-size: 1.9rem;
+        width: 18rem;
+    }
+
     .article_paragraph {
         text-align: center;
         display: flex;
         flex-direction: column;
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 1rem;
         align-items: center;
         width: 15rem;
