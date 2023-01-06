@@ -58,13 +58,19 @@
     }
 
     .link {
+        background-color: rgba(0, 0, 0, 0.209);
         display: block;
-        padding: 0.1rem;
+        padding: 2rem;
         margin: 2rem;
-        width: 20rem;
-        font-size: 2rem;
+        width: 40rem;
+        font-size: 3.5rem;
+        border-bottom: 0.2rem solid rgb(182, 49, 171);
+        border-radius: 2rem;
+        transition: all ease 1s;
     }
-
+.link:active{
+    transform: scale(0.8);
+}
     .button_response {
         font-size: 5rem;
         position: relative;
@@ -72,7 +78,11 @@
         z-index: 3000;
         background-color: transparent;
         border: none;
+        transition: all ease 1s;
+    }
 
+    .button_response:active {
+        transform: rotate(90deg);
     }
 
     .nav_response_open {
@@ -81,7 +91,7 @@
         position: fixed;
         display: flex;
         left: 0rem;
-        top: 5rem;
+        top: 5.5rem;
         flex-direction: column;
         z-index: 2000;
         width: 100%;
