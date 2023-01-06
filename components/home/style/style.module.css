@@ -1,7 +1,7 @@
 .div_father {
     background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
     position: relative;
-    top: 5rem;
+    top: 3rem;
     padding: 1rem;
     left: 0px;
     right: 0px;
@@ -17,41 +17,42 @@
 .header {
     background-image: url('https://res.cloudinary.com/dqhbskhe7/image/upload/v1670711135/css/background/xth2saawkgqzvgadzmfj.jpg');
     background-attachment: fixed;
-    color: white;
-    font-size: 3rem;
-    padding: 4rem;
+    color: rgb(82, 202, 243);
+    font-size: 2rem;
+    padding: 2rem;
     border-bottom: 3px solid black;
     position: relative;
     bottom: 16px;
     transition: all 2s ease;
     text-align: center;
+    margin: 0;
 }
 
 .header:hover {
     letter-spacing: 3px;
-    color: rgba(145, 49, 219, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .article {
     background: linear-gradient(90deg, #1d36c590, transparent) #2195f32b;
-    padding: 1rem 2rem 2rem 2rem;
-    margin: 2rem;
-    color: #fff;
-    transition: background-color 5s;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 2.4rem 2.4rem 3.4rem 2.4rem;
+    color: white;
+    transition: all ease 2s;
     border-radius: 1rem;
 }
 
 .article:hover,
 .article:focus {
     background-color: rgba(145, 49, 219, 0.9);
-    color: #fff;
+    transform: scale(1.1);
 }
 
 .project {
-    font-size: 3rem;
-    padding: 4rem;
+    font-size: 2rem;
+    padding: 1.5rem 0rem 0rem 0rem;
     color: white;
-    border-bottom: 3px solid white;
+    border-top: 3px solid white;
     width: 100%;
     position: relative;
     bottom: 16px;
@@ -59,12 +60,12 @@
 }
 
 .titule_paragraph {
-    font-size: 3rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .paragraph_body {
-    font-size: 2rem;
+    font-size: 1.1rem;
 }
 
 .container {
@@ -73,16 +74,14 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .seccion_card {
     display: flex;
     margin: 0.5rem;
-    padding: 1.5rem;
     color: bisque;
-
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     transition: all 1s ease;
@@ -106,10 +105,11 @@
 }
 
 .article_paragraph {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
     align-items: center;
-    width: 25rem;
+    width: 15rem;
 }

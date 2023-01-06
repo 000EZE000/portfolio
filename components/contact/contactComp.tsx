@@ -139,6 +139,7 @@ export default function ContactComp(): JSX.Element {
                             alt="Whatsapp"
                             width='110'
                             height='110'
+                            className={style.contact_imageloc}
                         />
                     </Link>
                     <Link

@@ -6,5 +6,5 @@ interface prop {
     target: string
 }
 export default function LinkComp({ link, title, target }: prop): JSX.Element {
-    return <Link className={style.link} href={link} target={target}>{title}</Link>
+    return <Link className={style.link} href={link} target={target}><span className={style.span_link}>{title}</span></Link>
 }

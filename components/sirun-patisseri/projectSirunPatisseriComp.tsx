@@ -3,38 +3,38 @@ import HeadComp from "@components/head/headComp"
 import ButtonDeploy from "../button/LinkDeploy"
 import ButtonRepo from "../button/LinkRepo"
 import style from './style/style.module.css'
-import {useState} from "react"
+import { useState } from "react"
 import Image from "next/image"
 import Modal from "@components/modal/modal"
 export default function SirunPatisseriComponents(): JSX.Element {
-    const [openModal,setOpenModal] = useState(false);
-    const [imageUrl,setImageUrl] = useState('');
+    const [openModal, setOpenModal] = useState(false);
+    const [imageUrl, setImageUrl] = useState('');
 
-const userImage =[
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672955938/sirun%20patisserie/bd7qmceclyp4vjvtyj1f.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/u9lql5q9kysasp1wgp3m.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/wwyqkrs9ndt7vxuhhg0k.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/mr94hcuja2kx0ear5rtq.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/vsiretskumpkqxwdrgk8.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/zmaozd19magmatni2qm8.png',
-]
-const adminImage = [
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/mafp9wk0zarf6bux5s0b.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/xkhjijncuu81nss94lrk.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/g2kks3iab20kfmv1kl4e.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/fzk5guiqzfyhsxysewzl.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/ezelhqt7abxnb6izetbm.png'
+    const userImage = [
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672955938/sirun%20patisserie/bd7qmceclyp4vjvtyj1f.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/u9lql5q9kysasp1wgp3m.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/wwyqkrs9ndt7vxuhhg0k.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/mr94hcuja2kx0ear5rtq.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/vsiretskumpkqxwdrgk8.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/zmaozd19magmatni2qm8.png',
+    ]
+    const adminImage = [
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/mafp9wk0zarf6bux5s0b.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/xkhjijncuu81nss94lrk.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/g2kks3iab20kfmv1kl4e.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/fzk5guiqzfyhsxysewzl.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939661/sirun%20patisserie/ezelhqt7abxnb6izetbm.png'
 
-]
-const appImage = [
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/ivvlwp6z9udfrng6jhfm.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/k5h6hcfuhdsyqxbnm6kt.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939662/sirun%20patisserie/ryoknftakpyeff26b8bx.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939790/sirun%20patisserie/oo5nxxqfldtls5blvjb2.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939789/sirun%20patisserie/jm5ngkv7ly2jmaumefd2.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939789/sirun%20patisserie/yt1r8wxbvgquc1tilss1.png',
-    'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939718/sirun%20patisserie/fkz82qpn5gsf9ug0fkb5.png'
-]
+    ]
+    const appImage = [
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939660/sirun%20patisserie/ivvlwp6z9udfrng6jhfm.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939659/sirun%20patisserie/k5h6hcfuhdsyqxbnm6kt.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939662/sirun%20patisserie/ryoknftakpyeff26b8bx.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939790/sirun%20patisserie/oo5nxxqfldtls5blvjb2.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939789/sirun%20patisserie/jm5ngkv7ly2jmaumefd2.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939789/sirun%20patisserie/yt1r8wxbvgquc1tilss1.png',
+        'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939718/sirun%20patisserie/fkz82qpn5gsf9ug0fkb5.png'
+    ]
 
     interface prop {
         array: string[]
@@ -60,49 +60,63 @@ const appImage = [
                 <p className={style.father_title_technologies}>
                     Tecnologias Usadas
                 </p>
-                <article>
-                    <p className={style.title_technologies} >Front end</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Typescript', 'CSS', 'HTML', 'React', 'Redux(persist, tookit)', 'Nextjs']}
-                        />
+                <article className={style.content_technologie}>
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Front end</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Typescript', 'CSS', 'HTML', 'React', 'Redux(persist, tookit)', 'Nextjs']}
+                            />
+                        </div>
                     </div>
-                    <p className={style.title_technologies} >Back end</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Typescript', 'Nodejs', 'Nodemailer',]}
-                        />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Back end</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Typescript', 'Nodejs', 'Nodemailer',]}
+                            />
+                        </div>
                     </div>
-                    <p className={style.title_technologies} >Base de Dato</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Typescript', 'Prisma', 'Postgres']}
-                        />
-                    </div>
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Base de Dato</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Typescript', 'Prisma', 'Postgres']}
+                            />
 
-                    <p className={style.title_technologies} >Control de Versiones</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Git', 'GitHub', 'GitFlow']}
-                        />
+                        </div>
                     </div>
-                    <p className={style.title_technologies} >APIS</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Auth0', 'Next-auth', 'Cloudinary', 'Mercado Pago']}
-                        />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Control de Versiones</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Git', 'GitHub', 'GitFlow']}
+                            />
+                        </div>
                     </div>
-                    <p className={style.title_technologies} >Deploy</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Base de Datos: AWS Amazon', 'Client & Server: Vercel']}
-                        />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >APIS</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Auth0', 'Next-auth', 'Cloudinary', 'Mercado Pago']}
+                            />
+                        </div>
                     </div>
-                    <p className={style.title_technologies} >Organizacion</p>
-                    <div className={style.content_span}>
-                        <Span
-                            array={['Trello', 'Mucho Pair Programing']}
-                        />
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Deploy</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Base de Datos: AWS Amazon', 'Client & Server: Vercel']}
+                            />
+                        </div>
+                    </div>
+                    <div className={style.container_technologie}>
+                        <p className={style.title_technologies} >Organizacion</p>
+                        <div className={style.content_span}>
+                            <Span
+                                array={['Trello', 'Pair Programing']}
+                            />
+                        </div>
                     </div>
                 </article>
                 <article className={style.content_span_request}>
@@ -128,8 +142,8 @@ const appImage = [
                 <CollaboratorsComp />
             </section>
             <section>
-                <header><h3>Fotos</h3></header>
-                <p>Parte Usuario</p>
+                <header className={style.header_image}><h3>Fotos</h3></header>
+                <p className={style.title_section_image}>Parte Usuario</p>
                 <div className={style.container_image}>
                     {userImage.map((image, index) =>
                         <Image
@@ -146,7 +160,7 @@ const appImage = [
                         />
                     )}
                 </div>
-                <p>Parte Admin</p>
+                <p className={style.title_section_image}>Parte Admin</p>
                 <div className={style.container_image}>
                     {adminImage.map((image, index) =>
                         <Image
@@ -163,8 +177,8 @@ const appImage = [
                         />
                     )}
                 </div>
-                <p>App</p>
-         <div className={style.container_image}>
+                <p className={style.title_section_image}>App</p>
+                <div className={style.container_image}>
                     {appImage.map((image, index) =>
                         <Image
                             key={index}
@@ -179,18 +193,19 @@ const appImage = [
                             }}
                         />
                     )}
-                    </div>
+                </div>
             </section>
-            <section>
-                <header><h3>Deploy y Repo</h3></header>
-                <ButtonDeploy />
-                <ButtonRepo />
+            <section >
+                <div className={style.container_button_deploy_repo}>
+                    <ButtonDeploy />
+                    <ButtonRepo />
+                </div>
             </section>
         </main>
-<Modal
-openModal={setOpenModal}
-image={imageUrl}
-switchModal={openModal}
-/>
+        <Modal
+            openModal={setOpenModal}
+            image={imageUrl}
+            switchModal={openModal}
+        />
     </div>
 }

@@ -44,6 +44,7 @@ export default function AboutComponents(): JSX.Element {
                     <p>
                         El desarrollo Web es el área que de trabajo donde me siento cómodo y Feliz!!.
                     </p>
+                    <p></p>
                 </article>
             </section>
         </main>

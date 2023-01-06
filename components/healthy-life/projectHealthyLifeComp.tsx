@@ -1,6 +1,7 @@
 import ButtonDeploy from "../button/LinkDeploy"
 import HeadComp from "@components/head/headComp"
 import ButtonRepo from "../button/LinkRepo"
+import { LinkComp } from "@components/button"
 import style from "./style/style.module.css"
 import Image from "next/image"
 import Modal from "@components/modal/modal"
@@ -114,7 +115,7 @@ export default function HealthyLifeComponentes(): JSX.Element {
             </section>
             <section>
                 <div className={style.container_button_deploy_repo}>
-                    <ButtonDeploy />
+                    <LinkComp title="Deploy en Proceso" link="" target="" />
                     <ButtonRepo />
                 </div>
             </section>

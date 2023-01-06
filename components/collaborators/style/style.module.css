@@ -6,14 +6,14 @@
 }
 
 .header {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .section {
     text-align: center;
-    width: 30rem;
-    background-color: rgba(79, 112, 175, 0.522);
-    border-radius: 0.4rem;
+    width: 20rem;
+    background-color: rgba(154, 23, 104, 0.522);
+    border-radius: 2rem;
     padding: 2rem;
     margin: 1rem;
     transition: all ease 2s;

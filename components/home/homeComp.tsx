@@ -12,19 +12,19 @@ export default function HomeComponents(): JSX.Element {
             <section>
                 <header className={style.header}>FULL STACK DEVELOPER</header>
                 <article className={style.article}>
-                    <p className={style.titule_paragraph}> Hola 👋, Me llamo Ezequiel Sosa</p>
-                    <p className={style.titule_paragraph}>Bienvenidos a Mi Portfolio!!</p>
-                    <p className={style.paragraph_body}>Unas cositas sobre de mi:</p>
+                    <span className={style.titule_paragraph}> Hola 👋, Me llamo Ezequiel Sosa  y Bienvenidos a Mi Portfolio!!</span>
+                    <p></p>
+                    <span className={style.paragraph_body}>Unas cositas sobre de mi:</span>
                     <p className={style.paragraph_body}>
                         Me gusta los desafios y busco diferentes soluciones para cada problema,
                         como el proyecto <a href="#Healthy-Life">Healthy-Life</a> que requirio toda la disiplina y disposicion
                         para poder completarlo en tiempo y forma.
                     </p>
-                    <p className={style.paragraph_body}>
+                    <span className={style.paragraph_body}>
                         Me integro bien en grupo, me gusta poder compartir conocimientos o entre todos podamos
                         solucionar un problema, como en el Proyecto <a href="#Sirun-Pâtisserie">Sirun Pâtisserie </a>
                         donde el proyecto fue realizado por Mi y  4 desarrolladores mas.
-                    </p>
+                    </span>
                 </article>
             </section>
             <section>

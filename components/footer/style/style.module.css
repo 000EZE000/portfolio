@@ -1,5 +1,7 @@
 .image {
     transition: all 1s ease;
+    width: 3rem;
+    height: 3rem;
 }
 
 .image:hover {
@@ -12,7 +14,7 @@
     position: relative;
     right: 1rem;
     top: 3rem;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: space-around;
     background-image: linear-gradient(to bottom left, rgb(0, 191, 255), rgb(137, 69, 177));
 }

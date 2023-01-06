@@ -1,7 +1,7 @@
 .div_father {
     background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
     position: relative;
-    top: 5rem;
+    top: 3rem;
     padding: 1rem;
     left: 0px;
     right: 0px;
@@ -10,7 +10,7 @@
 
 .main {
     position: relative;
-    top: 3rem;
+    bottom: 1rem;
 }
 
 .container_image_header {
@@ -29,15 +29,21 @@
     width: 100%;
 }
 
+.container_image_header~.image:hover {
+    transform: scale(0.1);
+}
+
+
 .image {
-    margin: 2rem;
+    margin: 1rem;
     position: absolute;
     border-radius: 50%;
-    top: 9rem;
+    top: 10rem;
     transition: all 2s ease;
     animation: movingArrow 1s infinite;
     background-image: linear-gradient(0.25turn, rgb(35, 100, 177), rgb(36, 86, 166), rgb(49, 66, 171));
-
+    width: 12rem;
+    height: 16rem;
 }
 
 
@@ -50,12 +56,21 @@
 }
 
 .article {
+    background-color: rgba(57, 55, 97, 0.392);
     position: relative;
+    border-radius: 1rem;
     color: white;
-    padding: 4rem;
-    font-size: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.3rem;
     top: 4rem;
     text-align: justify;
+    margin: 1rem;
+    transition: all ease 1s;
+}
+
+.article:hover {
+    background-color: rgb(57, 55, 97);
+    transform: scale(1.05);
 }
 
 .paragraph {
