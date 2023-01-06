@@ -45,7 +45,7 @@ export default function HomeComponents(): JSX.Element {
                         </article>
                         <div className={style.container_link}>
                             <LinkHealthy />
-                            <LinkComp title="Deplo en Proceso" link="#" target="" />
+                            <LinkComp title="Deploy en Proceso" link="#" target="" />
                             <LinkComp title="Repositorio" link="https://github.com/000EZE000/Healthy-Life" target=" " />
                         </div>
                     </section>
