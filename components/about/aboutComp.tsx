@@ -5,15 +5,8 @@ import Footer from "@components/footer/footerComp"
 import Nav from "@components/navbar/navbarComp"
 import style from './style/style.module.css'
 export default function AboutComponents(): JSX.Element {
-
-    const dateNow = new Date().toJSON().split('-')[0]
-    const myAge = Number(dateNow) - 1997
-
     return <div className={style.div_father}>
-        <HeadComp
-            title="Sobre Mi"
-            ico="eze.ico"
-        />
+        <HeadComp title="Sobre Mi" ico="eze.ico"/>
         <Nav />
         <main className={style.main} >
             <section>

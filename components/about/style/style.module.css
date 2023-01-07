@@ -1,78 +1,240 @@
-.div_father {
-    background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
-    position: relative;
-    top: 3rem;
-    padding: 1rem;
-    left: 0px;
-    right: 0px;
-    box-sizing: border-box;
+@media (min-width: 700px) {
+    .div_father {
+        background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
+        position: relative;
+        top: 3rem;
+        padding: 1rem;
+        left: 0px;
+        right: 0px;
+        box-sizing: border-box;
+    }
+
+    .main {
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .container_image_header {
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url('https://media.diariouno.com.ar/p/2053685777c17f7a354882c18c2c4965/adjuntos/298/imagenes/008/983/0008983696/1200x0/smart/perilago-norte-dique-potrerillos-43jpeg.jpeg');
+        margin-bottom: 4rem;
+        background-position-y: -8rem;
+        background-position-x: 1rem;
+        padding: 10rem;
+        border-bottom: 10px solid transparent;
+        border-image: linear-gradient(0.25turn, rgb(35, 145, 213), rgb(36, 86, 166), rgb(90, 5, 188));
+        border-image-slice: 1;
+        width: 100%;
+    }
+
+    .container_image_header~.image:hover {
+        transform: scale(0.1);
+    }
+
+
+    .image {
+        margin: 1rem;
+        position: absolute;
+        border-radius: 50%;
+        top: 10rem;
+        transition: all 2s ease;
+        animation: movingArrow 1s infinite;
+        background-image: linear-gradient(0.25turn, rgb(35, 100, 177), rgb(36, 86, 166), rgb(49, 66, 171));
+        width: 12rem;
+        height: 16rem;
+    }
+
+
+    .header {
+        position: absolute;
+        font-size: 3rem;
+        top: -2rem;
+        color: white;
+
+    }
+
+    .article {
+        background-color: rgba(57, 55, 97, 0.392);
+        position: relative;
+        border-radius: 1rem;
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.3rem;
+        top: 4rem;
+        text-align: justify;
+        margin: 1rem;
+        transition: all ease 1s;
+    }
+
+    .article:hover {
+        background-color: rgb(57, 55, 97);
+        transform: scale(1.05);
+    }
+
+    .paragraph {
+        padding: 2rem;
+    }
 }
 
-.main {
-    position: relative;
-    bottom: 1rem;
+@media (max-width: 500px) {
+    .div_father {
+        background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
+        position: relative;
+        top: 5rem;
+        padding: 1rem;
+        left: 0px;
+        right: 0px;
+        box-sizing: border-box;
+        width: 200%;
+    }
+
+    .main {
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .container_image_header {
+        display: flex;
+        justify-content: center;
+        background-attachment: fixed;
+        background-image: url('https://media.diariouno.com.ar/p/2053685777c17f7a354882c18c2c4965/adjuntos/298/imagenes/008/983/0008983696/1200x0/smart/perilago-norte-dique-potrerillos-43jpeg.jpeg');
+        margin-bottom: 4rem;
+        background-position-y: -8rem;
+        background-position-x: -11.3rem;
+        padding: 6rem;
+        border-bottom: 10px solid transparent;
+        border-image: linear-gradient(0.25turn, rgb(35, 145, 213), rgb(36, 86, 166), rgb(90, 5, 188));
+        border-image-slice: 3;
+        width: 100%;
+    }
+
+    .container_image_header~.image:hover {
+        transform: scale(0.1);
+    }
+
+
+    .image {
+        margin: 1rem;
+        position: absolute;
+        border-radius: 50%;
+        top: 1rem;
+        transition: all 2s ease;
+        animation: movingArrow 1s infinite;
+        background-image: linear-gradient(0.25turn, rgb(35, 100, 177), rgb(36, 86, 166), rgb(49, 66, 171));
+        width: 12rem;
+        height: 16rem;
+    }
+
+
+    .header {
+        position: absolute;
+        font-size: 3rem;
+        top: -2rem;
+        color: white;
+
+    }
+
+    .article {
+        background-color: rgba(57, 55, 97, 0.392);
+        position: relative;
+        border-radius: 1rem;
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 2rem;
+        top: 4rem;
+        text-align: justify;
+        transition: all ease 1s;
+    }
+
+    .article:hover {
+        background-color: rgb(57, 55, 97);
+        transform: scale(1.05);
+    }
+
+    .paragraph {
+        padding: 2rem;
+    }
 }
 
-.container_image_header {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url('https://media.diariouno.com.ar/p/2053685777c17f7a354882c18c2c4965/adjuntos/298/imagenes/008/983/0008983696/1200x0/smart/perilago-norte-dique-potrerillos-43jpeg.jpeg');
-    margin-bottom: 4rem;
-    background-position-y: -8rem;
-    background-position-x: 1rem;
-    padding: 10rem;
-    border-bottom: 10px solid transparent;
-    border-image: linear-gradient(0.25turn, rgb(35, 145, 213), rgb(36, 86, 166), rgb(90, 5, 188));
-    border-image-slice: 1;
-    width: 100%;
-}
+@media (max-width: 200px) {
+    .div_father {
+        background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
+        position: relative;
+        top: 5rem;
+        padding: 1rem;
+        left: 0px;
+        right: 0px;
+        box-sizing: border-box;
+        width: 200%;
+    }
 
-.container_image_header~.image:hover {
-    transform: scale(0.1);
-}
+    .main {
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .container_image_header {
+        display: flex;
+        justify-content: center;
+        background-attachment: fixed;
+        background-image: url('https://media.diariouno.com.ar/p/2053685777c17f7a354882c18c2c4965/adjuntos/298/imagenes/008/983/0008983696/1200x0/smart/perilago-norte-dique-potrerillos-43jpeg.jpeg');
+        margin-bottom: 4rem;
+        background-position-y: -8rem;
+        background-position-x: -11.3rem;
+        padding: 6rem;
+        border-bottom: 10px solid transparent;
+        border-image: linear-gradient(0.25turn, rgb(35, 145, 213), rgb(36, 86, 166), rgb(90, 5, 188));
+        border-image-slice: 3;
+        width: 100%;
+    }
+
+    .container_image_header~.image:hover {
+        transform: scale(0.1);
+    }
 
 
-.image {
-    margin: 1rem;
-    position: absolute;
-    border-radius: 50%;
-    top: 10rem;
-    transition: all 2s ease;
-    animation: movingArrow 1s infinite;
-    background-image: linear-gradient(0.25turn, rgb(35, 100, 177), rgb(36, 86, 166), rgb(49, 66, 171));
-    width: 12rem;
-    height: 16rem;
-}
+    .image {
+        margin: 1rem;
+        position: absolute;
+        border-radius: 50%;
+        top: 1rem;
+        transition: all 2s ease;
+        animation: movingArrow 1s infinite;
+        background-image: linear-gradient(0.25turn, rgb(35, 100, 177), rgb(36, 86, 166), rgb(49, 66, 171));
+        width: 12rem;
+        height: 16rem;
+    }
 
 
-.header {
-    position: absolute;
-    font-size: 3rem;
-    top: -2rem;
-    color: white;
+    .header {
+        position: absolute;
+        font-size: 3rem;
+        top: -2rem;
+        color: white;
 
-}
+    }
 
-.article {
-    background-color: rgba(57, 55, 97, 0.392);
-    position: relative;
-    border-radius: 1rem;
-    color: white;
-    padding: 1rem 1rem 1rem 1rem;
-    font-size: 1.3rem;
-    top: 4rem;
-    text-align: justify;
-    margin: 1rem;
-    transition: all ease 1s;
-}
+    .article {
+        background-color: rgba(57, 55, 97, 0.392);
+        position: relative;
+        border-radius: 1rem;
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 2rem;
+        top: 4rem;
+        text-align: justify;
+        transition: all ease 1s;
+    }
 
-.article:hover {
-    background-color: rgb(57, 55, 97);
-    transform: scale(1.05);
-}
+    .article:hover {
+        background-color: rgb(57, 55, 97);
+        transform: scale(1.05);
+    }
 
-.paragraph {
-    padding: 2rem;
+    .paragraph {
+        padding: 2rem;
+    }
 }
