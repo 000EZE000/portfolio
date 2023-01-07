@@ -181,8 +181,8 @@
     .div_father {
         background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #3f27a1 100%);
         position: relative;
-        top: 5rem;
-        padding: 1rem;
+        top: 5.5rem;
+        padding: 3rem 1rem 1rem 1rem;
         left: 0px;
         right: 0px;
         box-sizing: border-box;
@@ -363,15 +363,15 @@
 }
 /* ------------------------------------------------- */
 @media (max-width: 280px) {
-       .div_father {
+      .div_father {
         background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #3f27a1 100%);
         position: relative;
-        top: 5rem;
-        padding: 1rem;
+        top: 5.5rem;
+        padding: 3rem 1rem 1rem 1rem;
         left: 0px;
         right: 0px;
         box-sizing: border-box;
-        width: 250%;
+        width: 200%;
     }
 
 .title {
