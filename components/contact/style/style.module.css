@@ -63,7 +63,7 @@
     border: none;
     cursor: pointer;
     color: white;
-    width: 90vh;
+    width: 30rem;
     border-radius: 1rem;
     background-color: rgba(35, 107, 188, 0.518);
     transition: all ease 1s;
@@ -243,7 +243,7 @@
     border: none;
     cursor: pointer;
     color: white;
-    width: 90vh;
+     width: 30rem;
     border-radius: 1rem;
     background-color: rgba(35, 107, 188, 0.518);
     transition: all ease 1s;
@@ -353,6 +353,11 @@
 .ico_modal {
     margin: 10rem;
     font-size: 12rem;
+}
+.contact_imageloc{
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
 }
 
 }
@@ -423,7 +428,7 @@
     border: none;
     cursor: pointer;
     color: white;
-    width: 90vh;
+     width: 30rem;
     border-radius: 1rem;
     background-color: rgba(35, 107, 188, 0.518);
     transition: all ease 1s;
@@ -533,5 +538,10 @@
 .ico_modal {
     margin: 10rem;
     font-size: 12rem;
+}
+.contact_imageloc{
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
 }
 }
