@@ -47,22 +47,22 @@
 
 @media (max-width: 501px) {
 .container_modal {
-    width: 0px;
-    height: 110rem;
+    width: 100vw;
+    height: 350vw;
     position: fixed;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
-    top: 2rem;
-    left: -4rem;
+    top: 70vw;
+    left: -17vw;
     z-index: 1000;
     transform: rotate(90deg);
 }
 
 .button_modal {
     color: rgba(230, 19, 19, 0.708);
-    font-size: 7rem;
+    font-size: 4rem;
     border-radius: 50%;
     border: none;
     background-color: transparent;
@@ -74,8 +74,8 @@
 .container_button_modal {
     position: absolute;
     z-index: 100;
-    top: 5rem;
-    right: -45rem;
+    top: 30vw;
+    right: -85vw;
     z-index:4000;
        transform: rotate(90deg);
 }
@@ -88,11 +88,11 @@
 
 .image_modal {
     position: relative;
-    top: 3rem;
-    right: 2rem;
+    top: 20vw;
+    right: 20vw;
     position: relative;
-    width: 100rem;
-    height:47rem;
+    width: 350vw;
+    height:180vw;
 }
 
 }
