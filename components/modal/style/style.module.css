@@ -1,3 +1,4 @@
+@media (min-width: 501px) {
 .container_modal {
     width: 100vw;
     height: 100vh;
@@ -39,4 +40,59 @@
     position: relative;
     width: 89vw;
     height: 90vh;
+}
+
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 501px) {
+.container_modal {
+    width: 0px;
+    height: 110rem;
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    top: 2rem;
+    left: -4rem;
+    z-index: 1000;
+    transform: rotate(90deg);
+}
+
+.button_modal {
+    color: rgba(230, 19, 19, 0.708);
+    font-size: 7rem;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transition: all ease 1s;
+    z-index:4000;
+ 
+}
+
+.container_button_modal {
+    position: absolute;
+    z-index: 100;
+    top: 5rem;
+    right: -45rem;
+    z-index:4000;
+       transform: rotate(90deg);
+}
+
+.button_modal:hover {
+    color: rgb(255, 0, 0);
+    transform: rotate(360deg);
+}
+
+
+.image_modal {
+    position: relative;
+    top: 3rem;
+    right: 2rem;
+    position: relative;
+    width: 100rem;
+    height:47rem;
+}
+
 }

@@ -8,8 +8,8 @@ export default function Footer(): JSX.Element {
                 className={style.image}
                 src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/c2gy7bl5wsbhomdxd1pg.png'
                 alt="Twitter"
-                width='100'
-                height='100'
+                width='50'
+                height='50'
             />
         </Link>
         <Link
@@ -19,8 +19,8 @@ export default function Footer(): JSX.Element {
                 className={style.image}
                 src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/mi1pyplpbcnt8dishtvw.png'
                 alt="CV"
-                width='100'
-                height='100'
+                width='50'
+                height='50'
             />
         </Link>
         <Link href="https://www.linkedin.com/in/ezequiel-sosa-475150248/" target='_blank'>
@@ -28,8 +28,8 @@ export default function Footer(): JSX.Element {
                 className={style.image}
                 src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/sq7ueypjvqzegmyrga0l.png'
                 alt="Linkedin"
-                width='100'
-                height='100'
+                width='50'
+                height='50'
             />
         </Link>
         <Link href="https://wa.me/5492615939075" target='_blank'>
@@ -37,8 +37,8 @@ export default function Footer(): JSX.Element {
                 className={style.image}
                 src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707790/logo-contact/cmdyxpbwt74yafdxaiaq.webp'
                 alt="Whatsapp"
-                width='100'
-                height='100'
+                width='50'
+                height='50'
             />
         </Link>
         <Link href="/contact" >
@@ -46,8 +46,8 @@ export default function Footer(): JSX.Element {
                 className={style.image}
                 src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707789/logo-contact/ncrvrsmsbravcxrlkr2p.png'
                 alt="Gmail"
-                width='100'
-                height='100'
+                width='50'
+                height='50'
             />
         </Link>
         <Link href="https://github.com/000EZE000" target='_blank'>
@@ -55,8 +55,8 @@ export default function Footer(): JSX.Element {
                 className={style.image}
                 src='https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707784/logo-contact/p8ax9risj5togq4nz5ml.webp'
                 alt="GitHub"
-                width='100'
-                height='100'
+                width='50'
+                height='50'
             />
         </Link>
 
