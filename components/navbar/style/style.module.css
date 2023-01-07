@@ -1,4 +1,4 @@
-@media (min-width: 500px) {
+@media (min-width: 640px) {
     .nav {
         width: 100%;
         top: 0px;
@@ -42,7 +42,7 @@
 }
 
 
-@media (max-width: 499px) {
+@media (max-width: 639px) {
     .container {
         display: none;
     }
