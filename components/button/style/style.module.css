@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 640px) {
 
     .link {
         padding: 1rem;
@@ -9,6 +9,7 @@
         transition: all 2s ease;
         background-color: rgba(225, 225, 225, 0.4);
         border-radius: 3rem;
+              color:white;
     }
 
     .link:hover {
@@ -41,7 +42,7 @@
 }
 
 /* ------------------------------------------------------------------  */
-@media (max-width: 500px) {
+@media (max-width: 639px) {
     .link {
         padding: 1rem 0rem 1rem 0rem;
         font-size: 1.7rem;
@@ -51,6 +52,7 @@
         transition: all 2s ease;
         background-color: rgba(225, 225, 225, 0.4);
         border-radius: 2rem;
+        color:white;
     }
 
     .link:hover {
@@ -87,6 +89,7 @@
         transition: all 2s ease;
         background-color: rgba(225, 225, 225, 0.4);
         border-radius: 2rem;
+              color:white;
     }
 
     .link:hover {

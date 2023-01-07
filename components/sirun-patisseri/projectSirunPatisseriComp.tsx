@@ -1,6 +1,8 @@
 import CollaboratorsComp from "@components/collaborators/collaboratorsComp"
 import HeadComp from "@components/head/headComp"
 import ButtonDeploy from "../button/LinkDeploy"
+import Nav from "@components/navbar/navbarComp"
+import Footer from "@components/footer/footerComp"
 import ButtonRepo from "../button/LinkRepo"
 import style from './style/style.module.css'
 import { useState } from "react"
@@ -48,6 +50,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
             title="Sirun Pâtisserie"
             ico="sirun-logo.ico"
         />
+        <Nav/>
         <main>
             <section>
                 <header className={style.title}>Sirun Pâtisserie</header>
@@ -217,5 +220,6 @@ export default function SirunPatisseriComponents(): JSX.Element {
             image={imageUrl}
             switchModal={openModal}
         />
+        <Footer/>
     </div>
 }

@@ -1,6 +1,8 @@
 import ButtonDeploy from "../button/LinkDeploy"
 import HeadComp from "@components/head/headComp"
 import ButtonRepo from "../button/LinkRepo"
+import Footer from "@components/footer/footerComp"
+import Nav from "@components/navbar/navbarComp"
 import { LinkComp } from "@components/button"
 import style from "./style/style.module.css"
 import Image from "next/image"
@@ -38,6 +40,7 @@ export default function HealthyLifeComponentes(): JSX.Element {
             title="Healthy Life"
             ico="healthy.ico"
         />
+        <Nav/>
         <main className={style.main}>
             <section>
                 <header className={style.title}>Healthy Life</header>
@@ -115,7 +118,7 @@ export default function HealthyLifeComponentes(): JSX.Element {
             </section>
             <section>
                 <div className={style.container_button_deploy_repo}>
-                    <LinkComp title="Deploy en Proceso" link="" target="" />
+                    <LinkComp title="En Ello" link="" target="" />
                     <ButtonRepo />
                 </div>
             </section>
@@ -125,5 +128,6 @@ export default function HealthyLifeComponentes(): JSX.Element {
             switchModal={openModal}
             image={imageUrl}
         />
+        <Footer/>
     </div>
 }
