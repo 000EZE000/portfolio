@@ -1,4 +1,4 @@
-@media (min-width: 501px) {
+@media (min-width: 640px) {
 .container_modal {
     width: 100vw;
     height: 100vh;
@@ -45,7 +45,7 @@
 }
 /* --------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 501px) {
+@media (max-width: 639px) {
 .container_modal {
     width: 100vw;
     height: 350vw;
@@ -54,9 +54,9 @@
     align-content: center;
     justify-content: center;
     align-items: flex-start;
-    top: 70vw;
+    top: -30vw;
     left: -17vw;
-    z-index: 1000;
+    z-index: 4000;
     transform: rotate(90deg);
 }
 
@@ -75,8 +75,8 @@
     position: absolute;
     z-index: 100;
     top: 30vw;
-    right: -85vw;
-    z-index:4000;
+    right: -25vw;
+    z-index:5000;
        transform: rotate(90deg);
 }
 
@@ -91,13 +91,14 @@
     top: 20vw;
     right: 20vw;
     position: relative;
-    width: 350vw;
+    width: 220vw;
     height:180vw;
+    z-index: 4000;
 }
 
 }
 /* ---------------------------------------------------------============== */
-@media (max-height: 470px) {
+@media (max-height: 270px) {
 .container_modal {
     width: 100vw;
     height: 350vw;
