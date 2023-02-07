@@ -1,6 +1,6 @@
 
 import { ChangeEvent } from "react"
-import { body } from "../controller/validate"
+import { body } from "../controller/validateEmail"
 import { status, Ierror } from "../models"
 import style from './style/style.module.css'
 interface Istatus {
