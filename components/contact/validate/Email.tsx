@@ -1,45 +1,42 @@
+import { InterfaceForm } from "../models";
+import React, { Dispatch, ChangeEvent, SetStateAction } from "react";
+import ValidatorForm from "../controller/validateEmail";
+import style from "./style/style.module.css";
 
-import React, { ChangeEvent } from "react"
-import { email } from "../controller/validate"
-import { status, Ierror } from "../models"
-import style from './style/style.module.css'
-interface Istatus {
-    data: status
-    setData: Function
+interface InterfacePropEmail {
+  setForm: Dispatch<SetStateAction<InterfaceForm>>;
+  form: InterfaceForm;
 }
 
-interface IerrorV {
-    dataError: Ierror
-    setError: Function
-}
+type typePropError = Omit<InterfacePropEmail, "setForm">;
 
-interface Iprop {
-    statusI: Istatus
-    error: IerrorV
-}
+const Error = ({ form }: typePropError) => {
+  const { isEmail } = ValidatorForm;
+  return (
+    <>
+      {isEmail(form.email) && (
+        <p className={style.error_email}>Formato de Email incorrecto</p>
+      )}
+    </>
+  );
+};
 
-export default function Email({ statusI, error }: Iprop) {
-    const { data, setData } = statusI
-    const { dataError, setError } = error
-    const handleOnChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-        setData({ ...data, email: target.value })
-        console.log(email(data.email));
+export default function Email({ setForm, form }: InterfacePropEmail) {
+  type eventInput = ChangeEvent<HTMLInputElement>;
 
-        !email(data.email) ? setError({ ...dataError, email: 'fail' }) : setError({ ...dataError, email: '' })
-    }
-    const extraValidate = () => {
-        !email(data.email) ? setError({ ...dataError, email: 'fail' }) : setError({ ...dataError, email: '' })
-    }
+  const handleOnChange = ({ target: { value } }: eventInput) =>
+    setForm({ ...form, email: value });
 
-    return <div className={style.content_input_email}>
-        <input
-            className={style.input_email}
-            onBlur={() => { extraValidate() }}
-            type="text" value={data.email}
-            onChange={handleOnChange}
-            placeholder="&nbsp;&nbsp;Email"
-        />
-        {dataError.email && <p className={style.error_email}>Formato de Email incorrecto</p>}
+  return (
+    <div className={style.content_input_email}>
+      <input
+        className={style.input_email}
+        type="text"
+        value={form.email}
+        onChange={handleOnChange}
+        placeholder="&nbsp;&nbsp;Email"
+      />
+      <Error form={form} />
     </div>
-
+  );
 }
