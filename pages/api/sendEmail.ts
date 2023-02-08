@@ -5,7 +5,7 @@ import type { InterfaceForm } from "@components/contact/models";
 
 import { emailHtmlUser, emailHtmlAdmin } from "@components/contact/controller";
 
-export default function SendEmailApi(
+export default async function SendEmailApi(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -29,7 +29,7 @@ export default function SendEmailApi(
       subject: `Urgente mensaje enviado desde el Portfolio!!`,
       html: htmlForAdmin,
     };
-    transporter.sendMail(emailForAdmin, (error) => {
+    await transporter.sendMail(emailForAdmin, (error) => {
       if (error) {
         errorForSendEmail = true;
       }
@@ -44,7 +44,7 @@ export default function SendEmailApi(
       html: htmlFormUser,
     };
 
-    transporter.sendMail(emailForUser, (error) => {
+    await transporter.sendMail(emailForUser, (error) => {
       if (error) {
         errorForSendEmail = true;
       }
