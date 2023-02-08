@@ -22,7 +22,7 @@ export default function Email({ setForm, form }: InterfacePropEmail) {
         form={form}
         input="email"
         validation="isEmail"
-        message="El formato del Email es incorrecto"
+        message="formato del email incorrecto"
       />
     </div>
   );
