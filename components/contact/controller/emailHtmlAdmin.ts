@@ -1,6 +1,6 @@
-import { status } from "@components/contact/models";
-export default function htmlSendConfirmFeedBack(form: status) {
-    return `
+import { InterfaceForm } from "@components/contact/models";
+export default function htmlSendConfirmFeedBack(form: InterfaceForm) {
+  return `
     <!DOCTYPE html>
     <html lang="en">
     
@@ -27,13 +27,6 @@ export default function htmlSendConfirmFeedBack(form: status) {
                     ">
                Has recibido un Mensaje de ${form.email}
             </h1>
-            <h2 style="
-            display: inline-block;
-            position: relative;
-            text-align: center;">
-            ${form.body}
-            </h2>
-            <hr >
             <h1 style="
             display: inline-block;
             position: relative;
@@ -41,27 +34,17 @@ export default function htmlSendConfirmFeedBack(form: status) {
             color: black;
      
                     ">
-              FeedBack
+         Su nombre es  ${form.name}
             </h1>
-            ${form.statusFeedBack ?
-            `</h2>
+            <hr>
             <h2 style="
-            display: block;
+            display: inline-block;
             position: relative;
             text-align: center;">
-            ${form.feedBack}
-            </h2>`:
-            `</h2>
-            <h2 style="
-            display:    block;
-            position: relative;
-            text-align: center;">
-            No hay feedBack
-            </h2>`
-        }
-  
+            ${form.body}
+            </h2>
+        
         </div>
     </body>
-`
-
+`;
 }
