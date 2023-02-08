@@ -4,8 +4,9 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import type { InterfaceForm } from "@components/contact/models";
 
 import { emailHtmlAdmin } from "@components/contact/controller";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 
-export default function SendEmailApiAdmin(
+export default async function SendEmailApiAdmin(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -19,8 +20,6 @@ export default function SendEmailApiAdmin(
       },
     });
 
-    let errorForSendEmail: true | false = false;
-
     const htmlForAdmin = emailHtmlAdmin(responseSentFromFrontend);
 
     const emailForAdmin = {
@@ -29,17 +28,23 @@ export default function SendEmailApiAdmin(
       subject: `Urgente mensaje enviado desde el Portfolio!!`,
       html: htmlForAdmin,
     };
-   transporter.sendMail(emailForAdmin, (error, info) => {
-      if (error) {
-        errorForSendEmail = true;
-      }
-      return res.status(200).send(info);
+
+    const promiseApiNodemailer = new Promise((resolve, reject) => {
+      transporter.sendMail(emailForAdmin, (error, info) => {
+        if (error) {
+          reject(false);
+        }
+        resolve(info.response);
+      });
     });
 
+    const responseApiNodemailer = (await promiseApiNodemailer) as
+      | string
+      | false;
 
-    return errorForSendEmail
-      ? res.status(500).send(false)
-      : res.status(200).send(true);
+    return responseApiNodemailer
+      ? res.status(200).send(responseApiNodemailer)
+      : res.status(500).json(responseApiNodemailer);
   } catch (error) {
     return res.status(500).send(false);
   }

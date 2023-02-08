@@ -16,12 +16,11 @@ const sendFormServer: typeSendFormServer = async (form) => {
       url: "api/sendEmailAdmin",
       data: form,
     });
-    const { data } = responseFromBackendAdmin;
-    const { data: dataUser } = responseFromBackendUser;
 
-    console.log({ data, dataUser });
-
-    return responseFromBackendUser.status === 200 ? "success" : "fail";
+    return responseFromBackendUser.status === 200 &&
+      responseFromBackendAdmin.status === 200
+      ? "success"
+      : "fail";
   } catch (error) {
     return "fail";
   }

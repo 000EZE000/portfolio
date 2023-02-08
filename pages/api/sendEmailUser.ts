@@ -5,7 +5,7 @@ import type { InterfaceForm } from "@components/contact/models";
 
 import { emailHtmlUser } from "@components/contact/controller";
 
-export default function SendEmailApiUser(
+export default async function SendEmailApiUser(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -19,8 +19,6 @@ export default function SendEmailApiUser(
       },
     });
 
-    let errorForSendEmail: true | false = false;
-
     const htmlFormUser = emailHtmlUser(responseSentFromFrontend);
 
     const emailForUser = {
@@ -30,16 +28,22 @@ export default function SendEmailApiUser(
       html: htmlFormUser,
     };
 
-    transporter.sendMail(emailForUser, (error, info) => {
-      if (error) {
-        errorForSendEmail = true;
-      }
-      return res.status(200).send(info);
+    const promiseApiNodemailer = new Promise((resolve, reject) => {
+      transporter.sendMail(emailForUser, (error, info) => {
+        if (error) {
+          reject(false);
+        }
+        resolve(info.response);
+      });
     });
 
-    return errorForSendEmail
-      ? res.status(500).send(false)
-      : res.status(200).send(true);
+    const responseApiNodemailer = (await promiseApiNodemailer) as
+      | string
+      | false;
+
+    return responseApiNodemailer
+      ? res.status(200).send(responseApiNodemailer)
+      : res.status(500).json(responseApiNodemailer);
   } catch (error) {
     return res.status(500).send(false);
   }
