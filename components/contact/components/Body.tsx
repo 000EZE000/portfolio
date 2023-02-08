@@ -17,7 +17,7 @@ export default function Body({ setForm, form }: InterfacePropEmail) {
         className={style.input_textarea}
         value={form.body}
         onChange={handleOnChange}
-        placeholder={" Contenido"}
+        placeholder={"Contenido"}
       />
       <Error
         form={form}
