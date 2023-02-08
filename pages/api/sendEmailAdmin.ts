@@ -3,9 +3,10 @@ import * as nodemailer from "nodemailer";
 import type { NextApiRequest, NextApiResponse } from "next";
 import type { InterfaceForm } from "@components/contact/models";
 
-import { emailHtmlUser, emailHtmlAdmin } from "@components/contact/controller";
+import { emailHtmlAdmin } from "@components/contact/controller";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 
-export default async function SendEmailApi(
+export default async function SendEmailApiAdmin(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -19,8 +20,6 @@ export default async function SendEmailApi(
       },
     });
 
-    let errorForSendEmail: true | false = false;
-
     const htmlForAdmin = emailHtmlAdmin(responseSentFromFrontend);
 
     const emailForAdmin = {
@@ -29,30 +28,23 @@ export default async function SendEmailApi(
       subject: `Urgente mensaje enviado desde el Portfolio!!`,
       html: htmlForAdmin,
     };
-    await transporter.sendMail(emailForAdmin, (error) => {
-      if (error) {
-        errorForSendEmail = true;
-      }
+
+    const promiseApiNodemailer = new Promise((resolve, reject) => {
+      transporter.sendMail(emailForAdmin, (error, info) => {
+        if (error) {
+          reject(false);
+        }
+        resolve(info.response);
+      });
     });
 
-    const htmlFormUser = emailHtmlUser(responseSentFromFrontend);
+    const responseApiNodemailer = (await promiseApiNodemailer) as
+      | string
+      | false;
 
-    const emailForUser = {
-      from: process.env.EMAIL_USER,
-      to: responseSentFromFrontend.email,
-      subject: `Para ${responseSentFromFrontend.name}`,
-      html: htmlFormUser,
-    };
-
-    await transporter.sendMail(emailForUser, (error) => {
-      if (error) {
-        errorForSendEmail = true;
-      }
-    });
-
-    return errorForSendEmail
-      ? res.status(500).send(false)
-      : res.status(200).send(true);
+    return responseApiNodemailer
+      ? res.status(200).send(responseApiNodemailer)
+      : res.status(500).json(responseApiNodemailer);
   } catch (error) {
     return res.status(500).send(false);
   }
