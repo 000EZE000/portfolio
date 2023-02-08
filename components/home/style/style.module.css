@@ -1,3 +1,4 @@
+
 @media (min-width: 700px) {
     .div_father {
         background-image: linear-gradient(330deg, #00a4d7 0, #187499 25%, #1f4459 50%, #131a20 75%, #000000 100%);
@@ -344,4 +345,5 @@
         align-items: center;
         width: 30rem;
     }
+
 }

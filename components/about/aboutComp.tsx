@@ -7,6 +7,7 @@ import style from './style/style.module.css'
 export default function AboutComponents(): JSX.Element {
     return <div className={style.div_father}>
         <HeadComp title="Sobre Mi" ico="eze.ico"/>
+
         <Nav />
         <main className={style.main} >
             <section>
@@ -37,7 +38,9 @@ export default function AboutComponents(): JSX.Element {
                     <p>
                         El desarrollo Web es el área que de trabajo donde me siento cómodo y Feliz!!.
                     </p>
+
                     <p></p>
+
                 </article>
             </section>
         </main>

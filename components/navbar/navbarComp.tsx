@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 export default function Nav(): JSX.Element {
     const [switchNav, setSwitchNav] = useState(false)
+
     return <nav className={style.nav}>
         <div className={style.container}>
             <Link className={style.link} href={'/'}>Inicio</Link>
@@ -30,5 +31,6 @@ export default function Nav(): JSX.Element {
 
         </div>
         }
+
     </nav>
 }

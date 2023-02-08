@@ -1,8 +1,10 @@
+
 @media (min-width: 640px) {
 .div_father {
     background-image: linear-gradient(330deg, #057192 0, #125c7a 25%, #1f4459 50%, #131a20 75%, #340753 100%);
     position: relative;
     top: 3rem;
+
     padding: 1rem;
     left: 0px;
     right: 0px;
@@ -11,15 +13,19 @@
 }
 
 .title {
+
     font-size: 2.5rem;
     color: rgba(206, 112, 40, 0.926);
     padding: 1rem;
+
     margin: 0;
     border-bottom: 0.2rem solid rgb(255, 255, 255);
 }
 
 .paragrahp_title {
+
     font-size: 1.2rem;
+
 }
 
 .content_span {
@@ -89,6 +95,7 @@
     z-index: 100;
 }
 
+
 .content_span_request {
     display: flex;
     flex-direction: column;
@@ -101,6 +108,7 @@
     font-size: 1rem;
 
     transition: all ease 2s;
+
 }
 
 .span_request:hover {

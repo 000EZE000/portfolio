@@ -8,8 +8,10 @@ export default function CollaboratorsComp(): JSX.Element {
             <article>
                 <Image
                     src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/collaborators/kqtnp4mtvzefjgrgwdni.png"
+
                     width='150'
                     height='150'
+
                     alt='Ale'
                 />
                 <div>
@@ -33,6 +35,7 @@ export default function CollaboratorsComp(): JSX.Element {
                     src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/collaborators/iaa5e1jelctrj3cx4xbh.png"
                     width='150'
                     height='150'
+
                     alt='fran'
                 />
                 <div>
@@ -54,8 +57,10 @@ export default function CollaboratorsComp(): JSX.Element {
             <article>
                 <Image
                     src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707788/photo/collaborators/f1a67rbuqizziphxdvqv.png"
+
                     width='150'
                     height='150'
+
                     alt='Mailin'
                 />
                 <div>
@@ -77,8 +82,10 @@ export default function CollaboratorsComp(): JSX.Element {
             <article>
                 <Image
                     src="https://res.cloudinary.com/dqhbskhe7/image/upload/v1670707787/photo/collaborators/fmzru6spnhogwtidg6ih.png"
+
                     width='150'
                     height='150'
+
                     alt='Juan'
                 />
                 <div>

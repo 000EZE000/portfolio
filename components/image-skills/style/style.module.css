@@ -1,3 +1,4 @@
+
 @media (min-width: 700px) {
     .container {
         background-color: rgba(7, 214, 148, 0.505);
@@ -92,4 +93,5 @@
         position: relative;
         top: 1.7rem;
     }
+
 }

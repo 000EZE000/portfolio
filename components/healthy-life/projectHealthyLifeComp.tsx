@@ -1,4 +1,3 @@
-import ButtonDeploy from "../button/LinkDeploy"
 import HeadComp from "@components/head/headComp"
 import ButtonRepo from "../button/LinkRepo"
 import Footer from "@components/footer/footerComp"
@@ -40,10 +39,12 @@ export default function HealthyLifeComponentes(): JSX.Element {
             title="Healthy Life"
             ico="healthy.ico"
         />
+
         <Nav/>
         <main className={style.main}>
             <section>
                 <header className={style.title}>Healthy Life</header>
+
                 <article>
                     <p className={style.paragraph_content}>
                         El proyecto consistia en hacer una Aplicacion Full Stack ,
@@ -56,6 +57,7 @@ export default function HealthyLifeComponentes(): JSX.Element {
                         Tecnologias Usadas
                     </p>
                 </div>
+
                 <article className={style.content_technologie}>
                     <div className={style.container_technologie}>
                         <p className={style.title_technologies}>Front-End</p>
@@ -95,6 +97,7 @@ export default function HealthyLifeComponentes(): JSX.Element {
                             '✅ ⌛ Tiempo de Ejecucion: 3 semanas',
                         ].map((item, index) => <span key={index} className={style.span_request} >{item}</span>)
                     }
+
                 </article>
             </section>
             <section >
@@ -118,7 +121,9 @@ export default function HealthyLifeComponentes(): JSX.Element {
             </section>
             <section>
                 <div className={style.container_button_deploy_repo}>
+
                     <LinkComp title="En Ello" link="" target="" />
+
                     <ButtonRepo />
                 </div>
             </section>
@@ -128,6 +133,8 @@ export default function HealthyLifeComponentes(): JSX.Element {
             switchModal={openModal}
             image={imageUrl}
         />
+
         <Footer/>
+
     </div>
 }

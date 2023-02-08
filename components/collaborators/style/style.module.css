@@ -6,15 +6,19 @@
 }
 
 .header {
+
     font-size: 1.3rem;
     color: white;
+
 }
 
 .section {
     text-align: center;
+
     width: 18rem;
     background-color: rgba(154, 23, 104, 0.522);
     border-radius: 2rem;
+
     padding: 2rem;
     margin: 1rem;
     transition: all ease 2s;

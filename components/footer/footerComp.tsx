@@ -10,6 +10,7 @@ export default function Footer(): JSX.Element {
                 alt="Twitter"
                 width='50'
                 height='50'
+
             />
         </Link>
         <Link
@@ -21,6 +22,7 @@ export default function Footer(): JSX.Element {
                 alt="CV"
                 width='50'
                 height='50'
+
             />
         </Link>
         <Link href="https://www.linkedin.com/in/ezequiel-sosa-475150248/" target='_blank'>
@@ -30,6 +32,7 @@ export default function Footer(): JSX.Element {
                 alt="Linkedin"
                 width='50'
                 height='50'
+
             />
         </Link>
         <Link href="https://wa.me/5492615939075" target='_blank'>
@@ -39,6 +42,7 @@ export default function Footer(): JSX.Element {
                 alt="Whatsapp"
                 width='50'
                 height='50'
+
             />
         </Link>
         <Link href="/contact" >
@@ -48,6 +52,7 @@ export default function Footer(): JSX.Element {
                 alt="Gmail"
                 width='50'
                 height='50'
+
             />
         </Link>
         <Link href="https://github.com/000EZE000" target='_blank'>
@@ -57,6 +62,7 @@ export default function Footer(): JSX.Element {
                 alt="GitHub"
                 width='50'
                 height='50'
+
             />
         </Link>
 

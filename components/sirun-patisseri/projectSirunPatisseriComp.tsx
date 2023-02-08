@@ -38,6 +38,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
         'https://res.cloudinary.com/dqhbskhe7/image/upload/v1672939718/sirun%20patisserie/fkz82qpn5gsf9ug0fkb5.png'
     ]
 
+
     interface prop {
         array: string[]
     }
@@ -50,7 +51,9 @@ export default function SirunPatisseriComponents(): JSX.Element {
             title="Sirun Pâtisserie"
             ico="sirun-logo.ico"
         />
+
         <Nav/>
+
         <main>
             <section>
                 <header className={style.title}>Sirun Pâtisserie</header>
@@ -60,6 +63,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
                         minimos que se nos pedia , fuimos por mas, y esta ves podiamos usar cualquier tecnologia.
                     </p>
                 </article>
+
                 <div>
                     <p className={style.father_title_technologies}>
                         Tecnologias Usadas
@@ -130,6 +134,7 @@ export default function SirunPatisseriComponents(): JSX.Element {
                                 array={['Trello', 'Pair Programing']}
                             />
                         </div>
+
                     </div>
                 </article>
                 <article className={style.content_span_request}>
@@ -221,5 +226,6 @@ export default function SirunPatisseriComponents(): JSX.Element {
             switchModal={openModal}
         />
         <Footer/>
+
     </div>
 }

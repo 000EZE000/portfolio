@@ -1,6 +1,8 @@
+
 @media (min-width: 640px) {
 .container_modal {
     width: 100vw;
+
     height: 100vh;
     position: fixed;
     display: flex;
@@ -9,6 +11,7 @@
     align-items: flex-start;
     top: -1rem;
     z-index: 1000;
+
 }
 
 .button_modal {
@@ -25,11 +28,13 @@
     z-index: 100;
     top: 8vw;
     right: 12vw;
+
 }
 
 .button_modal:hover {
     color: rgb(255, 0, 0);
     transform: rotate(360deg);
+
 }
 
 

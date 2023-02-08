@@ -1,18 +1,22 @@
+
 @media (min-width: 640px) {
 .div_father {
     background-image: linear-gradient(330deg, #057192 0, #125c7a 25%, #1f4459 50%, #131a20 75%, #340753 100%);
     position: relative;
     top: 3rem;
+
     padding: 1rem;
     left: 0px;
     right: 0px;
     box-sizing: border-box;
     color: white;
+
     width: 100%;
 }
 
 .title {
     font-size: 2rem;
+
 }
 
 .container {
@@ -63,7 +67,9 @@
     border: none;
     cursor: pointer;
     color: white;
+
     width: 30rem;
+
     border-radius: 1rem;
     background-color: rgba(35, 107, 188, 0.518);
     transition: all ease 1s;
@@ -74,6 +80,7 @@
 .switch_feedback_open:hover {
     background-color: rgba(101, 35, 188, 0.497);
 }
+
 
 .container_submit {
     display: flex;
@@ -108,6 +115,7 @@
 
 .title_contact {
     font-size: 2rem;
+
 }
 
 .container_contact {
@@ -173,6 +181,7 @@
 .ico_modal {
     margin: 10rem;
     font-size: 12rem;
+
 }
 
 }
@@ -545,3 +554,4 @@
     margin: 2rem;
 }
 }
+
