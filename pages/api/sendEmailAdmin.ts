@@ -3,9 +3,9 @@ import * as nodemailer from "nodemailer";
 import type { NextApiRequest, NextApiResponse } from "next";
 import type { InterfaceForm } from "@components/contact/models";
 
-import { emailHtmlUser, emailHtmlAdmin } from "@components/contact/controller";
+import { emailHtmlAdmin } from "@components/contact/controller";
 
-export default async function SendEmailApi(
+export default function SendEmailApiAdmin(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -29,26 +29,13 @@ export default async function SendEmailApi(
       subject: `Urgente mensaje enviado desde el Portfolio!!`,
       html: htmlForAdmin,
     };
-    await transporter.sendMail(emailForAdmin, (error) => {
+   transporter.sendMail(emailForAdmin, (error, info) => {
       if (error) {
         errorForSendEmail = true;
       }
+      return res.status(200).send(info);
     });
 
-    const htmlFormUser = emailHtmlUser(responseSentFromFrontend);
-
-    const emailForUser = {
-      from: process.env.EMAIL_USER,
-      to: responseSentFromFrontend.email,
-      subject: `Para ${responseSentFromFrontend.name}`,
-      html: htmlFormUser,
-    };
-
-    await transporter.sendMail(emailForUser, (error) => {
-      if (error) {
-        errorForSendEmail = true;
-      }
-    });
 
     return errorForSendEmail
       ? res.status(500).send(false)
