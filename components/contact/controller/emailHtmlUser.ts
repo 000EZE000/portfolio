@@ -43,7 +43,7 @@ export default function htmlSendConfirm(form: InterfaceForm) {
                padding:2rem;
                color: black;
                text-align: center;
-               border-top: 2px solid wheat;
+  
                ">
                 En breve lo revisare 😌
            </h1>
