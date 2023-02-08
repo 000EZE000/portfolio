@@ -8,7 +8,7 @@ const sendFormServer: typeSendFormServer = async (form) => {
   try {
     const responseFromBackend: AxiosResponse = await axios({
       method: "post",
-      url: "api/sendeEmail",
+      url: "api/sendEmail",
       data: form,
     });
     return responseFromBackend.status === 200 ? "success" : "fail";
