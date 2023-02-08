@@ -29,7 +29,7 @@ export default function htmlSendConfirm(form: InterfaceForm) {
                Hola ${form.name} !!! 
               </h1>  
             <h1 style="
-             display: inline-block;
+             display: block;
                 padding:2rem;
                 color: black;
                 text-align: center;
