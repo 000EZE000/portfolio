@@ -1,40 +1,30 @@
+import { ChangeEvent } from "react";
 
-import { ChangeEvent } from "react"
-import { body } from "../controller/validateEmail"
-import { status, Ierror } from "../models"
-import style from './style/style.module.css'
-interface Istatus {
-    data: status
-    setData: Function
-}
+import style from "./style/style.module.css";
 
-interface IerrorV {
-    data: Ierror
-    setData: Function
-}
+import { InterfacePropEmail } from "./models/interface.contact.components";
 
-interface Iprop {
-    status: Istatus
-    error: IerrorV
-    name: 'body' | "feedBack"
-}
+import Error from "./Error";
 
-export default function Body({ status, error, name }: Iprop) {
-    const { data, setData } = status
-    const { data: dataError, setData: setError } = error
-    const handleOnChange = ({ target }: ChangeEvent<HTMLTextAreaElement>) => {
-        setData({ ...data, [name]: target.value })
-        !body(data[name]) ? setError({ ...dataError, [name]: 'fail' }) : setError({ ...dataError, [name]: '' })
-    }
+export default function Body({ setForm, form }: InterfacePropEmail) {
+  type inputTextarea = ChangeEvent<HTMLTextAreaElement>;
+  const handleOnChange = ({ target: { value } }: inputTextarea) =>
+    setForm({ ...form, body: value });
 
-    return <div className={style.content_textarea}>
-        <textarea
-            className={style.input_textarea}
-            value={data[name]}
-            onChange={handleOnChange}
-            placeholder={name === 'body' ? ' Contenido' : ' Feedback'}
-        />
-        {dataError[name] && <p className={style.error_textarea}>3 palabras como minimo</p>}
+  return (
+    <div className={style.content_textarea}>
+      <textarea
+        className={style.input_textarea}
+        value={form.body}
+        onChange={handleOnChange}
+        placeholder={" Contenido"}
+      />
+      <Error
+        form={form}
+        input="body"
+        validation="isBody"
+        message="3 palabras como minimo"
+      />
     </div>
-
+  );
 }
