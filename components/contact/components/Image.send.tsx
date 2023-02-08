@@ -10,7 +10,7 @@ const ImageSend = ({ image }: InterfacePropImage) => {
   const linkInactive =
     "https://res.cloudinary.com/dqhbskhe7/image/upload/v1675815156/logo-check/oahu3spv50g4hcc54bs0.png";
   const linkSuccess =
-    "https://res.cloudinary.com/dqhbskhe7/image/upload/v1671592861/logo-check/pc0ldenmgvme72zmwlnh.png";
+    "https://res.cloudinary.com/dqhbskhe7/image/upload/v1675883208/logo-check/r1ianpobcyylpwva0yjj.png";
 
   const linkFail =
     "https://res.cloudinary.com/dqhbskhe7/image/upload/v1675866939/logo-check/cskykk1izndqn02uv7gn.png";

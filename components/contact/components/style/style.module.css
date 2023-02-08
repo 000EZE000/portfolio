@@ -1,77 +1,252 @@
-.input_email {
-    background-color: rgba(17, 92, 149, 0.475);
-    width: 90vh;
-    padding: 1rem;
-    font-size: 2rem;
-    margin: 1rem;
-    border: none;
-    border-radius: 1rem;
-    color: rgb(218, 197, 238);
-}
-
-.error_email {
-    font-size: 1.5rem;
-    color: rgba(224, 20, 20, 0.778);
-    transition: all ease 1s;
-}
-
-.input_textarea {
-    background-color: rgba(17, 92, 149, 0.475);
-    padding: 2rem;
-    font-size: 2rem;
-    width: 90vh;
-    margin: 1rem;
-    border-radius: 1rem;
-    resize: none;
-    border: none;
-    color: rgb(218, 197, 238);
-}
-
-.content_input_email {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.content_textarea {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.error_textarea {
-    font-size: 1.5rem;
-    color: rgba(224, 20, 20, 0.778);
-    transition: all ease 1s;
-}
-
-.container_submit {
-    display: flex;
-    margin-left: 1rem;
-    justify-content: flex-start;
-}
-
-.submit {
-    padding: 1rem;
-    border: none;
-    width: 30vh;
-    border-radius: 1rem;
-    font-size: 2rem;
-    color: white;
-    transition: all ease 1s;
-    cursor: pointer;
-    background-color: rgba(40, 40, 150, 0.526);
-}
-
-.submit:hover {
-    background-color: rgba(157, 0, 255, 0.526);
-}
-
-.submit:disabled {
-    display: none;
-}
 
 
-.submit:active {
-    transform: scaleX(1.1);
-}
+@media (min-width: 640px) {
+
+    .input_email {
+        background-color: rgba(17, 92, 149, 0.475);
+        width: 90vh;
+        padding: 1rem;
+        font-size: 2rem;
+        margin: 1rem;
+        border: none;
+        border-radius: 1rem;
+        color: rgb(218, 197, 238);
+    }
+    
+    .error_email {
+        font-size: 1.5rem;
+        color: rgba(224, 20, 20, 0.778);
+        transition: all ease 1s;
+    }
+    
+    .input_textarea {
+        background-color: rgba(17, 92, 149, 0.475);
+        padding: 2rem;
+        font-size: 2rem;
+        width: 90vh;
+        margin: 1rem;
+        border-radius: 1rem;
+        resize: none;
+        border: none;
+        color: rgb(218, 197, 238);
+    }
+    
+    .content_input_email {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .content_textarea {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .error_textarea {
+        font-size: 1.5rem;
+        color: rgba(224, 20, 20, 0.778);
+        transition: all ease 1s;
+    }
+    
+    .container_submit {
+        display: flex;
+        margin-left: 1rem;
+        justify-content: flex-start;
+    }
+    
+    .submit {
+        padding: 1rem;
+        border: none;
+        width: 30vh;
+        border-radius: 1rem;
+        font-size: 2rem;
+        color: white;
+        transition: all ease 1s;
+        cursor: pointer;
+        background-color: rgba(40, 40, 150, 0.526);
+    }
+    
+    .submit:hover {
+        background-color: rgba(157, 0, 255, 0.526);
+    }
+    
+    .submit:disabled {
+        display: none;
+    }
+    
+    
+    .submit:active {
+        transform: scaleX(1.1);
+    }
+    
+    }
+    /* =========================================== */
+    @media (max-width: 639px) {
+        .input_email {
+            background-color: rgba(17, 92, 149, 0.475);
+            width: 90vh;
+            padding: 1rem;
+            font-size: 2rem;
+            margin: 1rem;
+            border: none;
+            border-radius: 1rem;
+            color: rgb(218, 197, 238);
+        }
+        
+        .error_email {
+            font-size: 1.5rem;
+            color: rgba(224, 20, 20, 0.778);
+            transition: all ease 1s;
+            left: 1rem;
+            position: relative;
+            padding-right:10rem ;
+        }
+        
+        .input_textarea {
+            background-color: rgba(17, 92, 149, 0.475);
+            padding: 2rem;
+            font-size: 2rem;
+            width: 90vh;
+            margin: 1rem;
+            border-radius: 1rem;
+            resize: none;
+            border: none;
+            color: rgb(218, 197, 238);
+        }
+        
+        .content_input_email {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .content_textarea {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .error_textarea {
+            font-size: 1.5rem;
+            color: rgba(224, 20, 20, 0.778);
+            transition: all ease 1s;
+        }
+        
+        .container_submit {
+            display: flex;
+            margin-left: 1rem;
+            justify-content: flex-start;
+        }
+        
+        .submit {
+            padding: 1rem;
+            border: none;
+            width: 30vh;
+            border-radius: 1rem;
+            font-size: 2rem;
+            color: white;
+            transition: all ease 1s;
+            cursor: pointer;
+            background-color: rgba(40, 40, 150, 0.526);
+        }
+        
+        .submit:hover {
+            background-color: rgba(157, 0, 255, 0.526);
+        }
+        
+        .submit:disabled {
+            display: none;
+        }
+        
+        
+        .submit:active {
+            transform: scaleX(1.1);
+        }
+        
+    
+    }
+    /* ------------------------------------------------- */
+    @media (max-width: 280px) {
+        .input_email {
+            background-color: rgba(17, 92, 149, 0.475);
+            width: 90vh;
+            padding: 1rem;
+            font-size: 2rem;
+            margin: 1rem;
+            border: none;
+            border-radius: 1rem;
+            color: rgb(218, 197, 238);
+        }
+        
+        .error_email {
+            font-size: 1.5rem;
+            color: rgba(224, 20, 20, 0.778);
+            transition: all ease 1s;
+            left: 1rem;
+            position: relative;
+            padding-right:10rem ;
+        }
+        
+        .input_textarea {
+            background-color: rgba(17, 92, 149, 0.475);
+            padding: 2rem;
+            font-size: 2rem;
+            width: 90vh;
+            margin: 1rem;
+            border-radius: 1rem;
+            resize: none;
+            border: none;
+            color: rgb(218, 197, 238);
+        }
+        
+        .content_input_email {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .content_textarea {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .error_textarea {
+            font-size: 1.5rem;
+            color: rgba(224, 20, 20, 0.778);
+            transition: all ease 1s;
+        }
+        
+        .container_submit {
+            display: flex;
+            margin-left: 1rem;
+            justify-content: flex-start;
+        }
+        
+        .submit {
+            padding: 1rem;
+            border: none;
+            width: 30vh;
+            border-radius: 1rem;
+            font-size: 2rem;
+            color: white;
+            transition: all ease 1s;
+            cursor: pointer;
+            background-color: rgba(40, 40, 150, 0.526);
+        }
+        
+        .submit:hover {
+            background-color: rgba(157, 0, 255, 0.526);
+        }
+        
+        .submit:disabled {
+            display: none;
+        }
+        
+        
+        .submit:active {
+            transform: scaleX(1.1);
+        }
+        
+    }
