@@ -44,3 +44,34 @@
     color: rgba(224, 20, 20, 0.778);
     transition: all ease 1s;
 }
+
+.container_submit {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: flex-start;
+}
+
+.submit {
+    padding: 1rem;
+    border: none;
+    width: 30vh;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: white;
+    transition: all ease 1s;
+    cursor: pointer;
+    background-color: rgba(40, 40, 150, 0.526);
+}
+
+.submit:hover {
+    background-color: rgba(157, 0, 255, 0.526);
+}
+
+.submit:disabled {
+    display: none;
+}
+
+
+.submit:active {
+    transform: scaleX(1.1);
+}

@@ -73,36 +73,6 @@
     background-color: rgba(101, 35, 188, 0.497);
 }
 
-.container_submit {
-    display: flex;
-    margin-left: 1rem;
-    justify-content: space-between;
-}
-
-.submit {
-    padding: 1rem;
-    border: none;
-    width: 30vh;
-    border-radius: 1rem;
-    font-size: 2rem;
-    color: white;
-    transition: all ease 1s;
-    cursor: pointer;
-    background-color: rgba(40, 40, 150, 0.526);
-}
-
-.submit:hover {
-    background-color: rgba(157, 0, 255, 0.526);
-}
-
-.submit:disabled {
-    display: none;
-}
-
-
-.submit:active {
-    transform: scaleX(1.1);
-}
 
 .title_contact {
     font-size: 3rem;
