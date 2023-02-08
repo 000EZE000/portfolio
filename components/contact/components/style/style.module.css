@@ -14,7 +14,7 @@
     }
     
     .error_email {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: rgba(224, 20, 20, 0.778);
         transition: all ease 1s;
     }
@@ -44,7 +44,7 @@
     }
     
     .error_textarea {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: rgba(224, 20, 20, 0.778);
         transition: all ease 1s;
     }
